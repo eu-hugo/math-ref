@@ -6,31 +6,30 @@
 
 **Notation.** Formula parameters are written as named quantities ($\text{radius}$, $\text{height}$); elsewhere standard variables apply.
 
-<!-- canonical set: Definition. Theorem. Lemma. Corollary. Proposition. Proof. Remark. Notation. Convention. Example. (Proposition) -->
+<!-- Editorial canonical label
 
-<!-- Use semantic LaTeX commands instead of literal or Unicode symbols -->
+Axiom
+Postulate
+Definition
+Theorem
+Proposition
+Lemma
+Corollary
+Proof
+Conjecture
+Remark
+Notation
+Convention
 
-<!--
-- Space around `:`, `\to`, `\mapsto`, `\iff`, `=`, `+`, `-`
-- Space after commas
-- `\quad` for spacing
 -->
+
+<!-- Use semantic LaTeX commands (e.g. \lt) instead of literal or Unicode symbols -->
+
+<!-- Space around `:`, `\to`, `\mapsto`, `\iff`, `=`, `+`, `-`, etc; Space after commas; `\quad` for spacing -->
 
 ---
 
-[Translation](#translation)
-
-[Rigid Transformations](#rigid-transformations)
-
-[Times Table](#times-table)
-
-[Similar Triangles](#similar-triangles)
-
-[Derivatives](#derivatives)
-
-[Line Equations](#line-equations)
-
-[Limits](#limits)
+[Future block](#translation)
 
 ---
 
@@ -58,7 +57,7 @@ $$
 
 ## Triangle
 
-**Definition** (triangle).
+**Definition**.
 
 $$
 \{(a, b, c) \in (\mathbb{R}^+)^3 \mid a + b > c,\ b + c > a,\ a + c > b\}, \quad (A, B, C) \in (0, \pi)^3
@@ -70,40 +69,70 @@ $$
 A + B + C = \pi
 $$
 
-**Remark** (classification).
+**Definition** (scalene).
 
 $$
-a \neq b \neq c \neq a \quad \text{(scalene)}
+a \neq b \neq c \neq a
+$$
+
+**Definition** (isosceles).
+
+$$
+a = b \neq c
+$$
+
+**Definition** (equilateral).
+
+$$
+a = b = c \quad
+$$
+
+**Definition** (acute).
+
+$$
+A < \frac{\pi}{2},\ B < \frac{\pi}{2},\ C < \frac{\pi}{2}
+$$
+
+**Definition** (right).
+
+$$
+a^2 + b^2 = c^2
+$$
+
+**Definition** (obtuse).
+
+$$
+A > \frac{\pi}{2} \lor B > \frac{\pi}{2} \lor C > \frac{\pi}{2}
+$$
+
+**Proposition** (side ratios, special right triangles).
+
+$$
+1 : 1 : \sqrt{2} \quad \text{(}45^\circ\text{-}45^\circ\text{-}90^\circ\text{)}
 $$
 
 $$
-a = b \neq c \quad \text{(isosceles)}
+1 : \sqrt{3} : 2 \quad \text{(}30^\circ\text{-}60^\circ\text{-}90^\circ\text{)}
+$$
+
+**Theorem** (Pythagorean).
+
+$$
+a^2 + b^2 = c^2 \iff \angle C = \frac{\pi}{2}
+$$
+
+**Corollary.**
+
+$$
+\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \quad \text{(distance between two points)}
 $$
 
 $$
-a = b = c \quad \text{(equilateral)}
+\sqrt{a^2 + b^2} \quad \text{(hypotenuse)}
 $$
 
 $$
-A < \frac{\pi}{2},\ B < \frac{\pi}{2},\ C < \frac{\pi}{2} \quad \text{(acute)}
-$$
-
-$$
-a^2 + b^2 = c^2 \quad \text{(right)}
-$$
-
-$$
-A > \frac{\pi}{2} \lor B > \frac{\pi}{2} \lor C > \frac{\pi}{2} \quad \text{(obtuse)}
-$$
-
-**Remark** (special right triangles).
-
-$$
-1 : 1 : \sqrt{2} \quad \text{(45-45-90)}
-$$
-
-$$
-1 : \sqrt{3} : 2 \quad \text{(30-60-90)}
+\sqrt{c^2 - a^2} \quad \text{(leg)}
 $$
 
 **Proposition** (area).
@@ -134,7 +163,7 @@ $$
 \triangle ABC \sim \triangle DEF \implies \frac{AB}{DE} = \frac{BC}{EF} = \frac{AC}{DF} = \text{scale factor}, \quad \text{scale factor} \in \mathbb{R}^+
 $$
 
-**Remark** (similarity criteria).
+**Proposition** (similarity criteria).
 
 $$
 \angle A = \angle D,\ \angle B = \angle E \quad \text{(AA)}
@@ -148,14 +177,14 @@ $$
 \frac{AB}{DE} = \frac{BC}{EF} = \frac{AC}{DF} \quad \text{(SSS)}
 $$
 
-**Proposition** (scale factor).
+**Corollary** (scale factor).
 
 $$
 \text{perimeter}(\triangle ABC) = \text{scale factor} \cdot \text{perimeter}(\triangle DEF)
 $$
 
 $$
-\text{area}(\triangle ABC) = \text{scale factor}^2 \cdot \text{area}(\triangle DEF)
+\text{area}(\triangle ABC) = \text{(scale factor)}^2 \cdot \text{area}(\triangle DEF)
 $$
 
 ## Area
@@ -233,62 +262,6 @@ $$
 \text{side} \cdot \sqrt{3} \quad \text{(space diagonal)}
 $$
 
-## Triangle
-
-**Definition** (triangle).
-
-$$
-\{(a, b, c) \in (\mathbb{R}^+)^3 \mid a + b > c,\ b + c > a,\ a + c > b\}, \quad (A, B, C) \in (0, \pi)^3
-$$
-
-**Theorem** (angle sum).
-
-$$
-A + B + C = \pi
-$$
-
-**Remark** (classification).
-
-$$
-a \neq b \neq c \neq a \quad \text{(scalene)}
-$$
-
-$$
-a = b \neq c \quad \text{(isosceles)}
-$$
-
-$$
-a = b = c \quad \text{(equilateral)}
-$$
-
-$$
-A < \frac{\pi}{2},\ B < \frac{\pi}{2},\ C < \frac{\pi}{2} \quad \text{(acute)}
-$$
-
-$$
-a^2 + b^2 = c^2 \quad \text{(right)}
-$$
-
-$$
-A > \frac{\pi}{2} \lor B > \frac{\pi}{2} \lor C > \frac{\pi}{2} \quad \text{(obtuse)}
-$$
-
-**Proposition** (area).
-
-$$
-\frac{1}{2} \cdot \text{base} \cdot \text{height}
-$$
-
-**Corollary.**
-
-$$
-\frac{\text{base}}{4} \cdot \sqrt{4 \cdot \text{leg}^2 - \text{base}^2} \quad \text{(isosceles)}
-$$
-
-$$
-\frac{\sqrt{3}}{4} \cdot \text{side}^2  \quad \text{(equilateral)}
-$$
-
 ## Derivatives
 
 **Definition** (differentiability at a point).
@@ -297,7 +270,7 @@ $$
 f'(a) \coloneqq \lim_{h \to 0} \frac{f(a + h) - f(a)}{h}
 $$
 
-### Fundamental derivatives
+**Proposition** (derivatives).
 
 $$
 (x^n)' = n x^{n-1}
@@ -339,29 +312,39 @@ $$
 \left(\frac{u}{v}\right)' = \frac{u'v - uv'}{v^2}
 $$
 
+## Transformations
 
-
-## Rigid Transformations
+**Definition.**
 
 $$
 T : \mathbb{R}^2 \to \mathbb{R}^2, \quad (x, y) \mapsto (x', y')
 $$
 
+**Definition** (rigid transformation).
+
 $$
-T \quad \text{is rigid} \iff \| T(x_1, y_1) - T(x_2, y_2) \| = \| (x_1, y_1) - (x_2, y_2) \|
+T \text{ is rigid} \iff \| T(x_1, y_1) - T(x_2, y_2) \| = \| (x_1, y_1) - (x_2, y_2) \|
 $$
 
-### Translation
+**Theorem.**
+
+$$
+T \text{ is rigid} \iff T \in \{T_{a,b},\ R_\theta,\ S\}
+$$
+
+**Definition** (translation).
 
 $$
 T_{a,b} : \mathbb{R}^2 \to \mathbb{R}^2, \quad (x, y) \mapsto (x + a, y + b), \quad a, b \in \mathbb{R}
 $$
 
-### Rotation
+**Definition** (rotation).
 
 $$
 R_\theta : \mathbb{R}^2 \to \mathbb{R}^2, \quad (x, y) \mapsto (x \cos\theta - y \sin\theta, x \sin\theta + y \cos\theta), \quad \theta \in \mathbb{R}
 $$
+
+**Corollary.**
 
 $$
 R_{\frac{\pi}{2}}(x, y) = (-y, x)
@@ -375,7 +358,7 @@ $$
 R_{\frac{3\pi}{2}}(x, y) = (y, -x)
 $$
 
-### Reflection
+**Definition** (reflection).
 
 $$
 S_x : \mathbb{R}^2 \to \mathbb{R}^2, \quad (x, y) \mapsto (x, -y)
@@ -393,7 +376,15 @@ $$
 S_{y=-x} : \mathbb{R}^2 \to \mathbb{R}^2, \quad (x, y) \mapsto (-y, -x)
 $$
 
-## Modulus properties
+## Modulus
+
+**Definition.**
+
+$$
+|x| = \sqrt{x^2}
+$$
+
+**Proposition.**
 
 $$
 |x| \geq 0
@@ -403,42 +394,55 @@ $$
 |x| = 0 \iff x = 0
 $$
 
-$$|xy| = |x||y|$$
+$$
+|xy| = |x||y|
+$$
 
 $$
 \left|\frac{x}{y}\right| = \frac{|x|}{|y|}, \quad y \neq 0
 $$
 
 $$
+|x|^2 = x^2
+$$
+
+**Theorem** (triangle inequality).
+
+$$
 |x + y| \leq |x| + |y|
 $$
+
+**Corollary.**
 
 $$
 |x - y| \geq \big||x| - |y|\big|
 $$
 
+**Proposition** (inequalities).
+
 $$
-|x|^2 = x^2
+|x| < a \iff -a < x < a
 $$
 
 $$
-|x| = \sqrt{x^2}
+|x| > a \iff x > a \lor x < -a
 $$
 
-$$|x| < a \iff -a < x < a \quad \text{(e.g., } |x-a| < \delta \iff a-\delta < x < a+\delta\text{)}$$
+**Example.**
 
 $$
-|x| > a \iff x > a \text{ or } x < -a
+|x - a| < \delta \iff a - \delta < x < a + \delta
 $$
 
-## Limits
+## Limit
 
-### $\epsilon - \delta$ definition
+**Definition** ($\epsilon - \delta$ definition).
+
 $$
 \lim_{x \to a} f(x) = L \iff \forall \epsilon > 0 \exists \delta > 0 \forall x \in \mathbb{R}, \big(a-\delta < x < a + \delta, x \neq a \implies L-\epsilon < f(x) < L+\epsilon\big)
 $$
 
-### Fundamental limits
+**Propoistion** (limits).
 
 $$
 \lim_{x\to 0}\frac{\sin x}{x}=1
@@ -507,97 +511,45 @@ $$
 | 19 | 57 | 76 | 95 | 114 | 133 | 152 | 171 |    | 209 |    |    |    |    |    |    |    | 361 |    |
 | 20 | 60 | 80 | 100 | 120 | 140 | 160 | 180 |    | 220 |    |    |    |    |    |    |    |    | 400 |
 
-## Similar Triangles
-
-$$
-\triangle ABC \sim \triangle DEF \iff \angle A = \angle D, \angle B = \angle E, \angle C = \angle F.
-$$
-
-$$
-\triangle ABC \sim \triangle DEF \implies \exists \text{(scale factor)} > 0 \quad \text{such that} \quad \frac{AB}{DE} = \frac{BC}{EF} = \frac{AC}{DF} = \text{(scale factor)}
-$$
-
-### Angle angle similarity
-
-$$
-\triangle ABC \sim \triangle DEF \iff \left( \angle A = \angle D, \quad \angle B = \angle E \right)
-$$
-
-### Side angle side similarity
-
-$$
-\triangle ABC \sim \triangle DEF \iff \left( \frac{AB}{DE} = \frac{AC}{DF}, \quad \angle A = \angle D \right)
-$$
-
-### Side side side similarity
-
-$$
-\triangle ABC \sim \triangle DEF \iff \left( \frac{AB}{DE} = \frac{BC}{EF} = \frac{AC}{DF} \right)
-$$
-
-### Scale Factor
-
-$$
-\text{perimeter}(\triangle ABC) = \text{(scale factor)}  \text{perimeter}(\triangle DEF) 
-$$
-
-$$
-\text{area}(\triangle ABC) = \text{(scale factor)}^2  \text{area}(\triangle DEF)
-$$
-
-## Special Right Triangles
-
-### 45-45-90 side ratio
-
-$$
-1 \colon 1 \colon \sqrt{2}
-$$
-
-### 30-60-90 side ratio
-
-$$
-1 \colon  \sqrt{3} \colon  2
-$$
-
 ## Line Equations
 
-### Slope–Intercept Form
+Slope–Intercept Form
   
 $$
 y = \text{(slope)}x + \text{(y-intercept)}
 $$
 
-### Point–Slope Form
+Point–Slope Form
 
 $$
 y - y_1 = \text{(slope)}(x - x_1), \quad P = (x_1,y_1)
 $$
 
-### Two–Point Form
+Two–Point Form
 
 $$
 y - y_1 = \frac{y_2 - y_1}{x_2 - x_1}(x - x_1), \quad P_1 = (x_1,y_1) \text{ and } P_2 = (x_2,y_2)
 $$
 
-  * Standard (General) Form
+Standard (General) Form
 
 $$
 Ax + By + C = 0
 $$
 
-  * Intercept Form
+Intercept Form
 
 $$
 \frac{x}{a} + \frac{y}{b} = 1
 $$
 
-  * Symmetric Form (2D)
+Symmetric Form (2D)
 
 $$
 \frac{x - x_1}{a} = \frac{y - y_1}{b}
 $$
 
-  * Parametric Form
+Parametric Form
 
 $$
 \begin{cases}
@@ -606,7 +558,7 @@ y = y_0 + bt
 \end{cases}
 $$
 
-  * Vector Form
+Vector Form
 
 $$
 \mathbf{r}(t) = \mathbf{r}_0 + t\mathbf{v}
@@ -626,28 +578,10 @@ b
 \end{pmatrix}
 $$
 
-  * Normal (Hesse) Form
+Normal (Hesse) Form
 
 $$
 x \cos \theta + y \sin \theta = p
-$$
-
-## Pythagorean Theorem
-
-$$
-\triangle ABC,\quad
-a = BC, b = AC, c = AB
-$$
-
-$$
-a^2 + b^2 = c^2
-\iff
-\angle C = \frac{\pi}{2}
-$$
-
-### Distance between 2 points
-$$
-D = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}
 $$
 
 ## Exponent Laws
@@ -667,16 +601,6 @@ $$
 1. $$u + v = v + u$$
 2. $$(u + v) + w = u + (v + w)$$
 3. $$\exists 0: v + 0 = v$$
-
-## Gaussian Elimination
-
-1. Swap rows.
-2. Multiply a row by a scalar.
-4. Add a multiple of one row to another.
-
-5. 1. $$\text{area(triangle)} = \frac12 bh$$
-2. $$\text{area(circle)} = \pi r^2$$
-3. $$\text{area(rectangle)} = wh$$
 
 # Part I Foundations
 
