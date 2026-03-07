@@ -56,6 +56,108 @@ $$
 (a, b, c) \in (\mathbb{R}^+)^3 \iff a \in \mathbb{R}^+,\ b \in \mathbb{R}^+,\ c \in \mathbb{R}^+
 $$
 
+## Triangle
+
+**Definition** (triangle).
+
+$$
+\{(a, b, c) \in (\mathbb{R}^+)^3 \mid a + b > c,\ b + c > a,\ a + c > b\}, \quad (A, B, C) \in (0, \pi)^3
+$$
+
+**Theorem** (angle sum).
+
+$$
+A + B + C = \pi
+$$
+
+**Remark** (classification).
+
+$$
+a \neq b \neq c \neq a \quad \text{(scalene)}
+$$
+
+$$
+a = b \neq c \quad \text{(isosceles)}
+$$
+
+$$
+a = b = c \quad \text{(equilateral)}
+$$
+
+$$
+A < \frac{\pi}{2},\ B < \frac{\pi}{2},\ C < \frac{\pi}{2} \quad \text{(acute)}
+$$
+
+$$
+a^2 + b^2 = c^2 \quad \text{(right)}
+$$
+
+$$
+A > \frac{\pi}{2} \lor B > \frac{\pi}{2} \lor C > \frac{\pi}{2} \quad \text{(obtuse)}
+$$
+
+**Remark** (special right triangles).
+
+$$
+1 : 1 : \sqrt{2} \quad \text{(45-45-90)}
+$$
+
+$$
+1 : \sqrt{3} : 2 \quad \text{(30-60-90)}
+$$
+
+**Proposition** (area).
+
+$$
+\frac{1}{2} \cdot \text{base} \cdot \text{height}
+$$
+
+**Corollary.**
+
+$$
+\frac{\text{base}}{4} \cdot \sqrt{4 \cdot \text{leg}^2 - \text{base}^2} \quad \text{(isosceles)}
+$$
+
+$$
+\frac{\sqrt{3}}{4} \cdot \text{side}^2 \quad \text{(equilateral)}
+$$
+
+**Definition** (similarity).
+
+$$
+\triangle ABC \sim \triangle DEF \iff \angle A = \angle D,\ \angle B = \angle E,\ \angle C = \angle F
+$$
+
+**Corollary.**
+
+$$
+\triangle ABC \sim \triangle DEF \implies \frac{AB}{DE} = \frac{BC}{EF} = \frac{AC}{DF} = \text{scale factor}, \quad \text{scale factor} \in \mathbb{R}^+
+$$
+
+**Remark** (similarity criteria).
+
+$$
+\angle A = \angle D,\ \angle B = \angle E \quad \text{(AA)}
+$$
+
+$$
+\frac{AB}{DE} = \frac{AC}{DF},\ \angle A = \angle D \quad \text{(SAS)}
+$$
+
+$$
+\frac{AB}{DE} = \frac{BC}{EF} = \frac{AC}{DF} \quad \text{(SSS)}
+$$
+
+**Proposition** (scale factor).
+
+$$
+\text{perimeter}(\triangle ABC) = \text{scale factor} \cdot \text{perimeter}(\triangle DEF)
+$$
+
+$$
+\text{area}(\triangle ABC) = \text{scale factor}^2 \cdot \text{area}(\triangle DEF)
+$$
+
 ## Area
 
 $$
