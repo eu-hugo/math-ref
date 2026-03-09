@@ -72,16 +72,16 @@ $$
 
 ## Triangle
 
-**Definition** (Geometric).
+**Definition** (geometric).
 
 $$
 \triangle ABC = \overline{AB} \cup \overline{BC} \cup \overline{CA}
 $$
 
-**Definition** (Parameter Space).
+**Definition** (parameter space).
 
 $$
-\mathcal{T} = \{(a, b, c) \in (\mathbb{R}^+)^3 \mid a + b > c,\ b + c > a,\ a + c > b\}, \quad (A, B, C) \in (0, \pi)^3
+\mathcal{T} = \{(a, b, c) \in (\mathbb{R}^+)^3 \mid a + b > c,\ b + c > a,\ a + c > b\ \text{(triangle inequality)}, \quad (A, B, C) \in (0, \pi)^3 \quad}
 $$
 
 **Theorem** (angle sum).
@@ -117,7 +117,7 @@ $$
 **Definition** (right).
 
 $$
-a^2 + b^2 = c^2
+A = \frac{\pi}{2} \lor B = \frac{\pi}{2} \lor C = \frac{\pi}{2}
 $$
 
 **Definition** (obtuse).
@@ -136,7 +136,7 @@ $$
 1 : \sqrt{3} : 2 \quad \text{(}30^\circ\text{-}60^\circ\text{-}90^\circ\text{)}
 $$
 
-**Theorem** (Pythagorean).
+**Theorem** (pythagorean).
 
 $$
 a^2 + b^2 = c^2 \iff \angle C = \frac{\pi}{2}
@@ -170,6 +170,12 @@ $$
 
 $$
 \frac{\sqrt{3}}{4} \cdot \text{side}^2 \quad \text{(equilateral)}
+$$
+
+**Definition** (congruence).
+
+$$
+\triangle ABC \cong \triangle DEF \iff \overline{AB} = \overline{DE},\ \overline{BC} = \overline{EF},\ \overline{CA} = \overline{FD},\ \angle A = \angle D,\ \angle B = \angle E,\ \angle C = \angle F
 $$
 
 **Definition** (similarity).
