@@ -72,10 +72,16 @@ $$
 
 ## Triangle
 
-**Definition**.
+**Definition** (Geometric).
 
 $$
-\{(a, b, c) \in (\mathbb{R}^+)^3 \mid a + b > c,\ b + c > a,\ a + c > b\}, \quad (A, B, C) \in (0, \pi)^3
+\triangle ABC = \overline{AB} \cup \overline{BC} \cup \overline{CA}
+$$
+
+**Definition** (Parameter Space).
+
+$$
+\mathcal{T} = \{(a, b, c) \in (\mathbb{R}^+)^3 \mid a + b > c,\ b + c > a,\ a + c > b\}, \quad (A, B, C) \in (0, \pi)^3
 $$
 
 **Theorem** (angle sum).
