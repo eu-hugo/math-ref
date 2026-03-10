@@ -4,7 +4,7 @@
 
 **Convention.** Each formula is a canonical representative of its equivalence class.
 
-**Notation.** Formula parameters are written as named quantities ($\text{radius}$, $\text{height}$); elsewhere standard variables apply.
+**Notation.** Formula parameters are written as named quantities (e.g. $\text{radius}$, $\text{height}$); elsewhere standard variables apply.
 
 <!-- Editorial labels
 
@@ -72,6 +72,20 @@ $$
 
 ## Triangle
 
+**Notation** (standard elements). Let $A, B, C \in \mathbb{R}^2$ be non-collinear vertices. The interior angles at these vertices are $A, B, C \in (0, \pi)$. The lengths of the edges opposite these vertices are $a, b, c \in \mathbb{R}^+$.
+
+**Notation** (standard elements).
+
+$$
+A, B, C \in \mathbb{R}^2 \text{ (vertices)}, \quad A, B, C \in (0, \pi) \text{ (interior angles)}, \quad a, b, c \in \mathbb{R}^+ \text{ (opposite edges)}
+$$
+
+**Notation** (standard elements).
+
+$$
+A, B, C \in \mathbb{R}^2 \text{ (non-collinear vertices)}, \quad A, B, C \in (0, \pi) \text{ (interior angles)}, \quad a, b, c \in \mathbb{R}^+ \text{ (opposite edges)}
+$$
+
 **Definition** (geometric).
 
 $$
@@ -81,7 +95,7 @@ $$
 **Definition** (parameter space).
 
 $$
-\mathcal{T} = \{(a, b, c) \in (\mathbb{R}^+)^3 \mid a + b > c,\ b + c > a,\ a + c > b\ \text{(triangle inequality)}, \quad (A, B, C) \in (0, \pi)^3 \quad}
+\mathcal{T} = \{(a, b, c) \in (\mathbb{R}^+)^3 \mid a + b > c,\ b + c > a,\ a + c > b\}, \quad (A, B, C) \in (0, \pi)^3
 $$
 
 **Theorem** (angle sum).
@@ -175,13 +189,13 @@ $$
 **Definition** (congruence).
 
 $$
-\triangle ABC \cong \triangle DEF \iff \overline{AB} = \overline{DE},\ \overline{BC} = \overline{EF},\ \overline{CA} = \overline{FD},\ \angle A = \angle D,\ \angle B = \angle E,\ \angle C = \angle F
+\triangle ABC \cong \triangle DEF \iff (\overline{AB} = \overline{DE} \land \overline{BC} = \overline{EF} \land \overline{CA} = \overline{FD} \land \angle A = \angle D \land \angle B = \angle E \land \angle C = \angle F)
 $$
 
 **Definition** (similarity).
 
 $$
-\triangle ABC \sim \triangle DEF \iff \angle A = \angle D,\ \angle B = \angle E,\ \angle C = \angle F
+\triangle ABC \sim \triangle DEF \iff (\angle A = \angle D,\ \angle B = \angle E,\ \angle C = \angle F)
 $$
 
 **Corollary.**
