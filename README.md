@@ -62,40 +62,28 @@ Example: Concrete, specific instance illustrating a definition, theorem, or conc
 
 ---
 
-$$
-(A, B, C) \in (0, \pi)^3 \iff A \in (0, \pi),\ B \in (0, \pi),\ C \in (0, \pi)
-$$
-
-$$
-(a, b, c) \in (\mathbb{R}^+)^3 \iff a \in \mathbb{R}^+,\ b \in \mathbb{R}^+,\ c \in \mathbb{R}^+
-$$
-
 ## Triangle
-
-**Notation** (standard elements). Let $A, B, C \in \mathbb{R}^2$ be non-collinear vertices. The interior angles at these vertices are $A, B, C \in (0, \pi)$. The lengths of the edges opposite these vertices are $a, b, c \in \mathbb{R}^+$.
-
-**Notation** (standard elements).
-
-$$
-A, B, C \in \mathbb{R}^2 \text{ (vertices)}, \quad A, B, C \in (0, \pi) \text{ (interior angles)}, \quad a, b, c \in \mathbb{R}^+ \text{ (opposite edges)}
-$$
-
-**Notation** (standard elements).
-
-$$
-A, B, C \in \mathbb{R}^2 \text{ (non-collinear vertices)}, \quad A, B, C \in (0, \pi) \text{ (interior angles)}, \quad a, b, c \in \mathbb{R}^+ \text{ (opposite edges)}
-$$
 
 **Definition** (geometric).
 
 $$
-\triangle ABC = \overline{AB} \cup \overline{BC} \cup \overline{CA}
+(A, B, C \in \mathbb{R}^2) \land (A, B, C \text{ non-collinear}) \implies \overline{AB} \cup \overline{BC} \cup \overline{CA} = \triangle ABC
+$$
+
+**Notation** (standard elements).
+
+$$
+a = \|\overline{BC}\|, \quad b = \|\overline{CA}\|, \quad c = \|\overline{AB}\|
+$$
+
+$$
+A = \angle BAC, \quad B = \angle ABC, \quad C = \angle BCA
 $$
 
 **Definition** (parameter space).
 
 $$
-\mathcal{T} = \{(a, b, c) \in (\mathbb{R}^+)^3 \mid a + b > c,\ b + c > a,\ a + c > b\}, \quad (A, B, C) \in (0, \pi)^3
+\mathcal{T} = \{(a, b, c) \in (\mathbb{R}^+)^3 \mid a + b > c \land b + c > a \land a + c > b\}
 $$
 
 **Theorem** (angle sum).
@@ -195,7 +183,7 @@ $$
 **Definition** (similarity).
 
 $$
-\triangle ABC \sim \triangle DEF \iff (\angle A = \angle D,\ \angle B = \angle E,\ \angle C = \angle F)
+\triangle ABC \sim \triangle DEF \iff (\angle A = \angle D \land \angle B = \angle E \land \angle C = \angle F)
 $$
 
 **Corollary.**
@@ -228,55 +216,6 @@ $$
 \text{area}(\triangle ABC) = \text{(scale factor)}^2 \cdot \text{area}(\triangle DEF)
 $$
 
-## Area
-
-$$
-\begin{aligned}
-\text{trapezoid} &: \frac{1}{2} \cdot (\text{base}_1 + \text{base}_2) \cdot \text{height} \\
-\text{parallelogram} &: \text{base} \cdot \text{height} \\
-\text{rectangle} &: \text{length} \cdot \text{width} \\
-\text{square} &: \text{side}^2 \\
-\text{triangle} &: \frac{1}{2} \cdot \text{base} \cdot \text{height} \\
-\text{circle} &: \pi \cdot \text{radius}^2
-\end{aligned}
-$$
-
-## Perimeter
-
-$$
-\begin{aligned}
-\text{rectangle} &: 2 \cdot (\text{length} + \text{width}) \\
-\text{square} &: 4 \cdot \text{side} \\
-\text{triangle} &: \text{side}_1 + \text{side}_2 + \text{side}_3 \\
-\text{circle} &: 2\pi \cdot \text{radius}
-\end{aligned}
-$$
-
-## Volume
-
-$$
-\begin{aligned}
-\text{rectangular prism} &: \text{length} \cdot \text{width} \cdot \text{height} \\
-\text{cube} &: \text{side}^3 \\
-\text{cylinder} &: \pi \cdot \text{radius}^2 \cdot \text{height} \\
-\text{cone} &: \frac{1}{3} \cdot \pi \cdot \text{radius}^2 \cdot \text{height} \\
-\text{pyramid} &: \frac{1}{3} \cdot \text{base area} \cdot \text{height} \\
-\text{sphere} &: \frac{4}{3} \cdot \pi \cdot \text{radius}^3
-\end{aligned}
-$$
-
-## Surface Area
-
-$$
-\begin{aligned}
-\text{rectangular prism} &: 2 \cdot (\text{length} \cdot \text{width} + \text{length} \cdot \text{height} + \text{width} \cdot \text{height}) \\
-\text{cube} &: 6 \cdot \text{side}^2 \\
-\text{cylinder} &: 2\pi \cdot \text{radius}^2 + 2\pi \cdot \text{radius} \cdot \text{height} \\
-\text{sphere} &: 4\pi \cdot \text{radius}^2 \\
-\text{cone} &: \pi \cdot \text{radius}^2 + \pi \cdot \text{radius} \cdot \text{slant height}
-\end{aligned}
-$$
-
 ## Cube
 
 **Definition** (cube).
@@ -301,56 +240,6 @@ $$
 
 $$
 \text{side} \cdot \sqrt{3} \quad \text{(space diagonal)}
-$$
-
-## Derivatives
-
-**Definition** (differentiability at a point).
-
-$$
-f'(a) \coloneqq \lim_{h \to 0} \frac{f(a + h) - f(a)}{h}
-$$
-
-**Proposition** (derivatives).
-
-$$
-(x^n)' = n x^{n-1}
-$$
-
-$$
-(\sin x)' = \cos x
-$$
-
-$$
-(\cos x)' = -\sin x
-$$
-
-$$
-(\tan x)' = \sec^2 x
-$$
-
-$$
-(e^x)' = e^x
-$$
-
-$$
-(\ln x)' = \frac{1}{x}
-$$
-
-$$
-(a^x)' = a^x \ln a
-$$
-
-$$
-(\sqrt{x})' = \frac{1}{2\sqrt{x}}
-$$
-
-$$
-(uv)' = u'v + uv'
-$$
-
-$$
-\left(\frac{u}{v}\right)' = \frac{u'v - uv'}{v^2}
 $$
 
 ## Transformations
@@ -469,10 +358,68 @@ $$
 |x| > a \iff x > a \lor x < -a
 $$
 
-**Example.**
+## Logarithm
+
+**Definition.**
 
 $$
-|x - a| < \delta \iff a - \delta < x < a + \delta
+\log_b x = y \iff b^y = x, \quad b \in \mathbb{R}^+, \quad b \neq 1, \quad x \in \mathbb{R}^+
+$$
+
+**Notation.**
+
+$$
+\ln x = \log_e x
+$$
+
+$$
+\log x = \log_{10} x
+$$
+
+**Proposition.**
+
+$$
+\log_b(xy) = \log_b x + \log_b y
+$$
+
+$$
+\log_b\left(\frac{x}{y}\right) = \log_b x - \log_b y
+$$
+
+$$
+\log_b(x^n) = n \log_b x
+$$
+
+$$
+\log_b b = 1
+$$
+
+$$
+\log_b 1 = 0
+$$
+
+$$
+\log_b b^x = x
+$$
+
+$$
+b^{\log_b x} = x
+$$
+
+**Theorem** (change of base).
+
+$$
+\log_b x = \frac{\log_k x}{\log_k b}, \quad k \in \mathbb{R}^+, \quad k \neq 1
+$$
+
+**Proposition** (inequalities).
+
+$$
+\log_b x < \log_b y \iff x < y, \quad b > 1
+$$
+
+$$
+\log_b x < \log_b y \iff x > y, \quad 0 < b < 1
 $$
 
 ## Limit
@@ -527,6 +474,116 @@ $$
 \quad (a>0)
 $$
 
+## Derivatives
+
+**Definition** (differentiability at a point).
+
+$$
+f'(a) \coloneqq \lim_{h \to 0} \frac{f(a + h) - f(a)}{h}
+$$
+
+**Proposition** (derivatives).
+
+$$
+(x^n)' = n x^{n-1}
+$$
+
+$$
+(\sin x)' = \cos x
+$$
+
+$$
+(\cos x)' = -\sin x
+$$
+
+$$
+(\tan x)' = \sec^2 x
+$$
+
+$$
+(e^x)' = e^x
+$$
+
+$$
+(\ln x)' = \frac{1}{x}
+$$
+
+$$
+(a^x)' = a^x \ln a
+$$
+
+$$
+(\sqrt{x})' = \frac{1}{2\sqrt{x}}
+$$
+
+$$
+(uv)' = u'v + uv'
+$$
+
+$$
+\left(\frac{u}{v}\right)' = \frac{u'v - uv'}{v^2}
+$$
+
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+
+## Area
+
+$$
+\begin{aligned}
+\text{trapezoid} &: \frac{1}{2} \cdot (\text{base}_1 + \text{base}_2) \cdot \text{height} \\
+\text{parallelogram} &: \text{base} \cdot \text{height} \\
+\text{rectangle} &: \text{length} \cdot \text{width} \\
+\text{square} &: \text{side}^2 \\
+\text{triangle} &: \frac{1}{2} \cdot \text{base} \cdot \text{height} \\
+\text{circle} &: \pi \cdot \text{radius}^2
+\end{aligned}
+$$
+
+## Perimeter
+
+$$
+\begin{aligned}
+\text{rectangle} &: 2 \cdot (\text{length} + \text{width}) \\
+\text{square} &: 4 \cdot \text{side} \\
+\text{triangle} &: \text{side}_1 + \text{side}_2 + \text{side}_3 \\
+\text{circle} &: 2\pi \cdot \text{radius}
+\end{aligned}
+$$
+
+## Volume
+
+$$
+\begin{aligned}
+\text{rectangular prism} &: \text{length} \cdot \text{width} \cdot \text{height} \\
+\text{cube} &: \text{side}^3 \\
+\text{cylinder} &: \pi \cdot \text{radius}^2 \cdot \text{height} \\
+\text{cone} &: \frac{1}{3} \cdot \pi \cdot \text{radius}^2 \cdot \text{height} \\
+\text{pyramid} &: \frac{1}{3} \cdot \text{base area} \cdot \text{height} \\
+\text{sphere} &: \frac{4}{3} \cdot \pi \cdot \text{radius}^3
+\end{aligned}
+$$
+
+## Surface Area
+
+$$
+\begin{aligned}
+\text{rectangular prism} &: 2 \cdot (\text{length} \cdot \text{width} + \text{length} \cdot \text{height} + \text{width} \cdot \text{height}) \\
+\text{cube} &: 6 \cdot \text{side}^2 \\
+\text{cylinder} &: 2\pi \cdot \text{radius}^2 + 2\pi \cdot \text{radius} \cdot \text{height} \\
+\text{sphere} &: 4\pi \cdot \text{radius}^2 \\
+\text{cone} &: \pi \cdot \text{radius}^2 + \pi \cdot \text{radius} \cdot \text{slant height}
+\end{aligned}
+$$
+
 ## Times Table
 
 | ×  | 2  | 3  | 4  | 5  | 6  | 7  | 8  | 9  | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 |
@@ -551,25 +608,25 @@ $$
 | 19 | 38 | 57 | 76 | 95 | 114 | 133 | 152 | 171 |    | 209 |    |    |    |    |    |    |    | 361 |    |
 | 20 | 40 | 60 | 80 | 100 | 120 | 140 | 160 | 180 |    | 220 |    |    |    |    |    |    |    |    | 400 |
 
-## First Primes
+## Prime
 
 | # | Prime |
 |---|------|
-| 1 | 2 |
-| 2 | 3 |
-| 3 | 5 |
-| 4 | 7 |
-| 5 | 11 |
-| 6 | 13 |
-| 7 | 17 |
-| 8 | 19 |
-| 9 | 23 |
-| 10 | 29 |
-| 11 | 31 |
-| 12 | 37 |
-| 13 | 41 |
-| 14 | 43 |
-| 15 | 47 |
+|  | 2 |
+|  | 3 |
+|  | 5 |
+|  | 7 |
+|  | 11 |
+|  | 13 |
+|  | 17 |
+|  | 19 |
+|  | 23 |
+|  | 29 |
+|  | 31 |
+| | 37 |
+|  | 41 |
+| | 43 |
+| | 47 |
 
 ## Line Equations
 
@@ -661,6 +718,14 @@ $$
 1. $$u + v = v + u$$
 2. $$(u + v) + w = u + (v + w)$$
 3. $$\exists 0: v + 0 = v$$
+
+$$
+(A, B, C) \in (0, \pi)^3 \iff A \in (0, \pi),\ B \in (0, \pi),\ C \in (0, \pi)
+$$
+
+$$
+(a, b, c) \in (\mathbb{R}^+)^3 \iff a \in \mathbb{R}^+,\ b \in \mathbb{R}^+,\ c \in \mathbb{R}^+
+$$
 
 # Part I Foundations
 
