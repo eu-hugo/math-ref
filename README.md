@@ -67,7 +67,7 @@ Example: Concrete, specific instance illustrating a definition, theorem, or conc
 **Definition** (geometric).
 
 $$
-(A, B, C \in \mathbb{R}^2) \land (A, B, C \text{ non-collinear}) \implies \overline{AB} \cup \overline{BC} \cup \overline{CA} = \triangle ABC
+(A, B, C \in \mathbb{R}^2) \land (A, B, C \text{ non-collinear}) \implies \triangle ABC := \overline{AB} \cup \overline{BC} \cup \overline{CA}
 $$
 
 **Notation** (standard elements).
