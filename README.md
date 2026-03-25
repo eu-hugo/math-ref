@@ -64,68 +64,6 @@ Example: Concrete, specific instance illustrating a definition, theorem, or conc
 
 ---
 
-## Logic
-
-**Notation.**
-
-$$
-\neg p \quad \text{(negation)}
-$$
-
-$$
-p \land q \quad \text{(conjunction)}
-$$
-
-$$
-p \lor q \quad \text{(disjunction)}
-$$
-
-$$
-p \oplus q \quad \text{(exclusive or)}
-$$
-
-$$
-p \to q \quad \text{(implication)}
-$$
-
-$$
-p \iff q \quad \text{(biconditional)}
-$$
-
-**Notation** (contrapositive and inverse).
-
-$$
-p \to q \iff \neg q \to \neg p \quad \text{(contrapositive)}
-$$
-
-$$
-p \to q \implies \neg p \to \neg q \quad \text{(inverse)}
-$$
-
-## Sets
-
-**Notation.**
-
-$$
-A \cup B \quad \text{(union)}
-$$
-
-$$
-A \cap B \quad \text{(intersection)}
-$$
-
-$$
-A \setminus B \quad \text{(difference)}
-$$
-
-$$
-A^c \quad \text{(complement)}
-$$
-
-$$
-A \oplus B \quad \text{(symmetric difference)}
-$$
-
 ## Triangle
 
 **Definition** (geometric).
@@ -598,6 +536,34 @@ $$
 ---
 ---
 ---
+
+## Symbols
+
+$$
+\begin{aligned}
+\in &: \text{element of} \\
+\notin &: \text{not element of} \\
+\subset &: \text{subset} \\
+\cup &: \text{union} \\
+\cap &: \text{intersection} \\
+\setminus &: \text{set difference} \\
+\emptyset &: \text{empty set} \\
+\forall &: \text{for all} \\
+\exists &: \text{there exists} \\
+\neg &: \text{negation} \\
+\land &: \text{conjunction} \\
+\lor &: \text{disjunction} \\
+\to &: \text{implication} \\
+\iff &: \text{biconditional} \\
+\mapsto &: \text{maps to} \\
+\coloneqq &: \text{defined as} \\
+\triangle ABC &: \text{triangle with vertices } A, B, C \\
+\overline{AB} &: \text{line segment from } A \text{ to } B \\
+\|\cdot\| &: \text{norm} \\
+\mathbb{R} &: \text{real numbers} \\
+\mathbb{R}^+ &: \text{positive reals}
+\end{aligned}
+$$
 
 ## Area
 
