@@ -176,6 +176,24 @@ $$
 \frac{\sqrt{3}}{4} \cdot \text{side}^2 \quad \text{(equilateral)}
 $$
 
+**Proposition** (area).
+
+$$
+\frac{1}{2} \cdot a \cdot b \cdot \sin C
+$$
+
+**Corollary.**
+
+$$
+\frac{a^2 \cdot \sin B \cdot \sin C}{2 \cdot \sin A}
+$$
+
+**Theorem** (Heron).
+
+$$
+\text{area} =\sqrt{s(s-a)(s-b)(s-c)}, \quad s = \frac{a + b + c}{2}
+$$
+
 **Definition** (congruence).
 
 $$
