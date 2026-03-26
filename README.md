@@ -743,6 +743,11 @@ $$
 ---
 
 # Appendix
+# Appendix I
+# Appendix II
+# Appendix III
+
+## Symbol
 
 $$
 \begin{aligned}
@@ -845,7 +850,7 @@ $$
 
 ## Prime numbers
 
-First under fifth: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47
+Primes under fifth: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47
 
 ## Line Equations
 
