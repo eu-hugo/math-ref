@@ -1,10 +1,10 @@
 (Personal notebook. Under construction...)
 
-<!-- a place that holds everything in a form that actually makes sense to me, not scattered across textbooks with different notations and different levels of rigor. -->
-
 **Convention.** Each formula is a canonical representative of its equivalence class.
 
 **Notation.** Formula parameters are written as named quantities (e.g. $\text{radius}$, $\text{height}$); elsewhere standard variables apply.
+
+<!--Meta: I don't know what this is, I guess it needs to be infered from how it looks. Is this a personal CRC handbook with genuine mathematical rigor and a consistent house style? A place that holds everything that I've got in touch with in a form that makes sense to me, not scattered across different textbooks with different notations and different levels of rigor? -->
 
 <!-- Editorial labels
 
@@ -580,7 +580,277 @@ $$
 |x| > a \iff x > a \lor x < -a
 $$
 
+## Addition
+
+**Notation.**
+
+$$
+\text{addend} + \text{addend} = \text{sum}
+$$
+
+**Remark** (synonyms).
+
+$$
+\text{addend} = \text{summand} = \text{augend}
+$$
+
+**Proposition.**
+
+$$
+a + b = b + a \quad \text{(commutativity)}
+$$
+
+$$
+(a + b) + c = a + (b + c) \quad \text{(associativity)}
+$$
+
+$$
+a + 0 = a \quad \text{(identity)}
+$$
+
+$$
+a + (-a) = 0 \quad \text{(inverse)}
+$$
+
+## Subtraction
+
+**Notation.**
+
+$$
+\text{minuend} - \text{subtrahend} = \text{difference}
+$$
+
+**Definition.**
+
+$$
+a - b = a + (-b)
+$$
+
+**Proposition.**
+
+$$
+a - b \neq b - a \quad \text{(non-commutativity)}
+$$
+
+$$
+(a - b) - c \neq a - (b - c) \quad \text{(non-associativity)}
+$$
+
+$$
+a - 0 = a
+$$
+
+$$
+a - a = 0
+$$
+
+## Multiplication
+
+**Notation.**
+
+$$
+\text{multiplicand} \times \text{multiplier} = \text{product}
+$$
+
+**Remark** (synonyms).
+
+$$
+\text{multiplicand} \times \text{multiplier} = \text{factor} \times \text{factor}
+$$
+
+**Proposition.**
+
+$$
+a \cdot b = b \cdot a \quad \text{(commutativity)}
+$$
+
+$$
+(a \cdot b) \cdot c = a \cdot (b \cdot c) \quad \text{(associativity)}
+$$
+
+$$
+a \cdot 1 = a \quad \text{(identity)}
+$$
+
+$$
+a \cdot 0 = 0 \quad \text{(absorption)}
+$$
+
+$$
+a \cdot (b + c) = a \cdot b + a \cdot c \quad \text{(distributivity)}
+$$
+
+$$
+a \cdot \frac{1}{a} = 1, \quad a \neq 0 \quad \text{(inverse)}
+$$
+
+## Division
+
+**Notation.**
+
+$$
+\text{dividend} \div \text{divisor} = \text{quotient, fraction, ratio}
+$$
+
+**Definition.**
+
+$$
+a \div b = a \cdot \frac{1}{b}, \quad b \neq 0
+$$
+
+**Proposition.**
+
+$$
+a \div b \neq b \div a \quad \text{(non-commutativity)}
+$$
+
+$$
+(a \div b) \div c \neq a \div (b \div c) \quad \text{(non-associativity)}
+$$
+
+$$
+a \div 1 = a
+$$
+
+$$
+a \div a = 1, \quad a \neq 0
+$$
+
+$$
+a \div 0 = \text{undefined}
+$$
+
+$$
+0 \div a = 0, \quad a \neq 0
+$$
+
+$$
+\frac{a \div b}{c \div d} = \frac{a \cdot d}{b \cdot c}, \quad b, c, d \neq 0
+$$
+
+## Exponentiation
+
+**Notation.**
+
+$$
+\text{base}^{\text{exponent}} = \text{power}
+$$
+
+**Definition.**
+
+$$
+b^n = \underbrace{b \cdot b \cdots b}_{n}, \quad b \in \mathbb{R}, \quad n \in \mathbb{N}
+$$
+
+**Proposition.**
+
+$$
+b^m \cdot b^n = b^{m+n}
+$$
+
+$$
+\frac{b^m}{b^n} = b^{m-n}, \quad b \neq 0
+$$
+
+$$
+(b^m)^n = b^{mn}
+$$
+
+$$
+(ab)^n = a^n b^n
+$$
+
+$$
+\left(\frac{a}{b}\right)^n = \frac{a^n}{b^n}, \quad b \neq 0
+$$
+
+$$
+b^0 = 1, \quad b \neq 0
+$$
+
+$$
+b^{-n} = \frac{1}{b^n}, \quad b \neq 0
+$$
+
+$$
+b^{\frac{1}{n}} = \sqrt[n]{b}
+$$
+
+$$
+b^{\frac{m}{n}} = \sqrt[n]{b^m}
+$$
+
+**Definition** (natural exponential).
+
+$$
+e = \lim_{n \to \infty} \left(1 + \frac{1}{n}\right)^n = \sum_{n=0}^{\infty} \frac{1}{n!}
+$$
+
+**Proposition** (inequalities).
+
+$$
+b^x < b^y \iff x < y, \quad b > 1
+$$
+
+$$
+b^x < b^y \iff x > y, \quad 0 < b < 1
+$$
+
+## Root
+
+**Notation.**
+
+$$
+\sqrt[\text{degree}]{\text{radicand}} = \text{radical, root}
+$$
+
+**Definition.**
+
+$$
+\sqrt[n]{x} = y \iff y^n = x, \quad n \in \mathbb{N}, \quad x \in \mathbb{R}^+
+$$
+
+**Notation.**
+
+$$
+\sqrt[2]{x} = \sqrt{x}
+$$
+
+**Proposition.**
+
+$$
+\sqrt[n]{xy} = \sqrt[n]{x} \cdot \sqrt[n]{y}
+$$
+
+$$
+\sqrt[n]{\frac{x}{y}} = \frac{\sqrt[n]{x}}{\sqrt[n]{y}}, \quad y \neq 0
+$$
+
+$$
+\sqrt[n]{x^m} = x^{\frac{m}{n}}
+$$
+
+$$
+\sqrt[m]{\sqrt[n]{x}} = \sqrt[mn]{x}
+$$
+
+$$
+\sqrt[n]{x^n} = |x|
+$$
+
+**Proposition** (inequalities).
+
+$$
+\sqrt[n]{x} < \sqrt[n]{y} \iff x < y, \quad n \in \mathbb{N}^+
+$$
+
 ## Logarithm
+
+**Notation.**
+
+$$
+\log_\text{base}\text{(anti-logarithm)} = \text{logarithm}
+$$
 
 **Definition.**
 
@@ -749,213 +1019,3 @@ $$
 ---
 
 # Appendix
-# Appendix I
-# Appendix II
-# Appendix III
-
-Definition table
-Lookup table
-
-## Symbol
-
-$$
-\begin{aligned}
-\in &: \text{element of} \\
-\notin &: \text{not element of} \\
-\subset &: \text{subset} \\
-\cup &: \text{union} \\
-\cap &: \text{intersection} \\
-\setminus &: \text{set difference} \\
-\emptyset &: \text{empty set} \\
-\forall &: \text{for all} \\
-\exists &: \text{there exists} \\
-\neg &: \text{negation} \\
-\land &: \text{conjunction} \\
-\lor &: \text{disjunction} \\
-\to &: \text{implication} \\
-\iff &: \text{biconditional} \\
-\mapsto &: \text{maps to} \\
-\coloneqq &: \text{defined as} \\
-\triangle ABC &: \text{triangle with vertices } A, B, C \\
-\overline{AB} &: \text{line segment from } A \text{ to } B \\
-\|\cdot\| &: \text{norm} \\
-\mathbb{R} &: \text{real numbers} \\
-\mathbb{R}^+ &: \text{positive reals}
-\end{aligned}
-$$
-
-## Area
-
-$$
-\begin{aligned}
-\text{trapezoid} &: \frac{1}{2} \cdot (\text{base}_1 + \text{base}_2) \cdot \text{height} \\
-\text{parallelogram} &: \text{base} \cdot \text{height} \\
-\text{rectangle} &: \text{length} \cdot \text{width} \\
-\text{square} &: \text{side}^2 \\
-\text{triangle} &: \frac{1}{2} \cdot \text{base} \cdot \text{height} \\
-\text{circle} &: \pi \cdot \text{radius}^2
-\end{aligned}
-$$
-
-## Perimeter
-
-$$
-\begin{aligned}
-\text{rectangle} &: 2 \cdot (\text{length} + \text{width}) \\
-\text{square} &: 4 \cdot \text{side} \\
-\text{triangle} &: \text{side}_1 + \text{side}_2 + \text{side}_3 \\
-\text{circle} &: 2\pi \cdot \text{radius}
-\end{aligned}
-$$
-
-## Volume
-
-$$
-\begin{aligned}
-\text{rectangular prism} &: \text{length} \cdot \text{width} \cdot \text{height} \\
-\text{cube} &: \text{side}^3 \\
-\text{cylinder} &: \pi \cdot \text{radius}^2 \cdot \text{height} \\
-\text{cone} &: \frac{1}{3} \cdot \pi \cdot \text{radius}^2 \cdot \text{height} \\
-\text{pyramid} &: \frac{1}{3} \cdot \text{base area} \cdot \text{height} \\
-\text{sphere} &: \frac{4}{3} \cdot \pi \cdot \text{radius}^3
-\end{aligned}
-$$
-
-## Surface Area
-
-$$
-\begin{aligned}
-\text{rectangular prism} &: 2 \cdot (\text{length} \cdot \text{width} + \text{length} \cdot \text{height} + \text{width} \cdot \text{height}) \\
-\text{cube} &: 6 \cdot \text{side}^2 \\
-\text{cylinder} &: 2\pi \cdot \text{radius}^2 + 2\pi \cdot \text{radius} \cdot \text{height} \\
-\text{sphere} &: 4\pi \cdot \text{radius}^2 \\
-\text{cone} &: \pi \cdot \text{radius}^2 + \pi \cdot \text{radius} \cdot \text{slant height}
-\end{aligned}
-$$
-
-## Times Table
-
-| ×  | 2  | 3  | 4  | 5  | 6  | 7  | 8  | 9  | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 |
-|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
-| 2  | 4  |    |    |    |    |    |    |    |    |    | 24 | 26 | 28 | 30 | 32 | 34 | 36 | 38 |    |
-| 3  | 6  |    |    |    |    |    |    |    |    |    | 36 | 39 | 42 | 45 | 48 | 51 | 54 | 57 |    |
-| 4  | 8  |    |    |    |    |    |    |    |    |    | 48 | 52 | 56 | 60 | 64 | 68 | 72 | 76 |    |
-| 5  | 10 |    |    |    |    |    |    |    |    |    | 60 | 65 | 70 | 75 | 80 | 85 | 90 | 95 |    |
-| 6  | 12 |    |    |    |    |    |    |    |    |    | 72 | 78 | 84 | 90 | 96 | 102 | 108 | 114 |     |
-| 7  | 14 |    |    |    |    |    |    |    |    |    | 84 | 91 | 98 | 105 | 112 | 119 | 126 | 133 |     |
-| 8  | 16 |    |    |    |    |    |    |    |    |    | 96 | 104 | 112 | 120 | 128 | 136 | 144 | 152 |     |
-| 9  | 18 |    |    |    |    |    |    |    |    |    | 108 | 117 | 126 | 135 | 144 | 153 | 162 | 171 |     |
-| 10 | 20 |    |    |    |    |    |    |    |    |    | 120 | 130 | 140 | 150 | 160 | 170 | 180 | 190 |     |
-| 11 | 22 |    |    |    |    |    |    |    |    |    | 132 | 143 | 154 | 165 | 176 | 187 | 198 | 209 |     |
-| 12 | 24 | 36 | 48 | 60 | 72 | 84 | 96 | 108 |    | 132 | 144 |    |    |    |    |    |    |    |    |
-| 13 | 26 | 39 | 52 | 65 | 78 | 91 | 104 | 117 |    | 143 |    | 169 |    |    |    |    |    |    |    |
-| 14 | 28 | 42 | 56 | 70 | 84 | 98 | 112 | 126 |    | 154 |    |    | 196 |    |    |    |    |    |    |
-| 15 | 30 | 45 | 60 | 75 | 90 | 105 | 120 | 135 |    | 165 |    |    |    | 225 |    |    |    |    |    |
-| 16 | 32 | 48 | 64 | 80 | 96 | 112 | 128 | 144 |    | 176 |    |    |    |    | 256 |    |    |    |    |
-| 17 | 34 | 51 | 68 | 85 | 102 | 119 | 136 | 153 |    | 187 |    |    |    |    |    | 289 |    |    |    |
-| 18 | 36 | 54 | 72 | 90 | 108 | 126 | 144 | 162 |    | 198 |    |    |    |    |    |    | 324 |    |    |
-| 19 | 38 | 57 | 76 | 95 | 114 | 133 | 152 | 171 |    | 209 |    |    |    |    |    |    |    | 361 |    |
-| 20 | 40 | 60 | 80 | 100 | 120 | 140 | 160 | 180 |    | 220 |    |    |    |    |    |    |    |    | 400 |
-
-## Prime numbers
-
-Primes under fifth: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47
-
-## Line Equations
-
-Slope–Intercept Form
-  
-$$
-y = \text{(slope)}x + \text{(y-intercept)}
-$$
-
-Point–Slope Form
-
-$$
-y - y_1 = \text{(slope)}(x - x_1), \quad P = (x_1,y_1)
-$$
-
-Two–Point Form
-
-$$
-y - y_1 = \frac{y_2 - y_1}{x_2 - x_1}(x - x_1), \quad P_1 = (x_1,y_1) \text{ and } P_2 = (x_2,y_2)
-$$
-
-Standard (General) Form
-
-$$
-Ax + By + C = 0
-$$
-
-Intercept Form
-
-$$
-\frac{x}{a} + \frac{y}{b} = 1
-$$
-
-Symmetric Form (2D)
-
-$$
-\frac{x - x_1}{a} = \frac{y - y_1}{b}
-$$
-
-Parametric Form
-
-$$
-\begin{cases}
-x = x_0 + at \\
-y = y_0 + bt
-\end{cases}
-$$
-
-Vector Form
-
-$$
-\mathbf{r}(t) = \mathbf{r}_0 + t\mathbf{v}
-$$
-
-$$
-\begin{pmatrix}
-x \\
-y
-\end{pmatrix}
-= \begin{pmatrix}
-x_0 \\
-y_0
-\end{pmatrix} + t \begin{pmatrix}
-a \\
-b
-\end{pmatrix}
-$$
-
-Normal (Hesse) Form
-
-$$
-x \cos \theta + y \sin \theta = p
-$$
-
-## Exponent Laws
-
-$$
-\begin{aligned}
-a^m  a^n &= a^{m+n} \\
-\frac{a^m}{a^n} &= a^{m-n} \\
-(a^m)^n &= a^{mn} \\
-(ab)^n &= a^n b^n \\
-\left(\frac{a}{b}\right)^n &= \frac{a^n}{b^n}
-\end{aligned}
-$$
-
-## Vector Space Axioms
-
-1. $$u + v = v + u$$
-2. $$(u + v) + w = u + (v + w)$$
-3. $$\exists 0: v + 0 = v$$
-
-$$
-(A, B, C) \in (0, \pi)^3 \iff A \in (0, \pi),\ B \in (0, \pi),\ C \in (0, \pi)
-$$
-
-$$
-(a, b, c) \in (\mathbb{R}^+)^3 \iff a \in \mathbb{R}^+,\ b \in \mathbb{R}^+,\ c \in \mathbb{R}^+
-$$
