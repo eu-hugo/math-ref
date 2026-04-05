@@ -268,6 +268,184 @@ use `\quad` and `\` for rendering spaces -->
 
 ---
 
+## Functions
+
+**Definition** (function).
+
+$$
+f : A \to B, \quad x \mapsto f(x)
+$$
+
+**Definition** (domain, codomain, image).
+
+$$
+\text{domain}(f) = A, \quad \text{codomain}(f) = B, \quad \text{image}(f) = \{f(x) \mid x \in A\} \subseteq B
+$$
+
+**Definition** (injectivity).
+
+$$
+f(x_1) = f(x_2) \implies x_1 = x_2
+$$
+
+**Definition** (surjectivity).
+
+$$
+\forall y \in B\ \exists x \in A : f(x) = y
+$$
+
+**Definition** (bijectivity).
+
+$$
+f \text{ bijective} \iff f \text{ injective} \land f \text{ surjective}
+$$
+
+**Definition** (inverse function).
+
+$$
+f \text{ bijective} \implies \exists f^{-1} : B \to A,\ f^{-1}(f(x)) = x \land f(f^{-1}(y)) = y
+$$
+
+**Definition** (composition).
+
+$$
+(g \circ f)(x) \coloneqq g(f(x)), \quad f : A \to B,\ g : B \to C
+$$
+
+**Definition** (even function).
+
+$$
+f(-x) = f(x) \quad \forall x \in A
+$$
+
+**Definition** (odd function).
+
+$$
+f(-x) = -f(x) \quad \forall x \in A
+$$
+
+## Elementary Functions
+
+**Definition** (power function).
+
+$$
+f(x) = x^n, \quad n \in \mathbb{Z}
+$$
+
+**Proposition.**
+
+$$
+\text{domain} = \mathbb{R}, \quad \text{range} = \mathbb{R}^+ \cup \{0\}\ \text{if } n \text{ even},\quad \text{range} = \mathbb{R}\ \text{if } n \text{ odd}
+$$
+
+$$
+f(-x) = f(x) \iff n \text{ even}
+$$
+
+$$
+f(-x) = -f(x) \iff n \text{ odd}
+$$
+
+**Definition** (absolute value function).
+
+$$
+f(x) = |x|
+$$
+
+**Proposition.**
+
+$$
+\text{domain} = \mathbb{R}, \quad \text{range} = \mathbb{R}^+ \cup \{0\}
+$$
+
+$$
+f(-x) = f(x) \quad \text{(even)}
+$$
+
+**Definition** (square root function).
+
+$$
+f(x) = \sqrt{x}
+$$
+
+**Proposition.**
+
+$$
+\text{domain} = \mathbb{R}^+ \cup \{0\}, \quad \text{range} = \mathbb{R}^+ \cup \{0\}
+$$
+
+**Definition** (exponential function).
+
+$$
+f(x) = b^x, \quad b \in \mathbb{R}^+, \quad b \neq 1
+$$
+
+**Proposition.**
+
+$$
+\text{domain} = \mathbb{R}, \quad \text{range} = \mathbb{R}^+
+$$
+
+$$
+b \gt 1 \implies f \text{ strictly increasing}
+$$
+
+$$
+0 \lt b \lt 1 \implies f \text{ strictly decreasing}
+$$
+
+**Definition** (natural exponential function).
+
+$$
+f(x) = e^x
+$$
+
+**Proposition** (derivative).
+
+$$
+\text{domain} = \mathbb{R}, \quad \text{range} = \mathbb{R}^+
+$$
+
+$$
+\frac{d}{dx} e^x = e^x
+$$
+
+**Definition** (logarithmic function).
+
+$$
+f(x) = \log_b x, \quad b \in \mathbb{R}^+, \quad b \neq 1
+$$
+
+**Proposition**.
+
+$$
+\text{domain} = \mathbb{R}^+, \quad \text{range} = \mathbb{R}
+$$
+
+$$
+b \gt 1 \implies f \text{ strictly increasing}
+$$
+
+$$
+0 \lt b \lt 1 \implies f \text{ strictly decreasing}
+$$
+
+**Definition** (natural logarithm function).
+
+$$
+f(x) = \ln x
+$$
+
+**Proposition** (derivative).
+
+$$
+\text{domain} = \mathbb{R}^+, \quad \text{range} = \mathbb{R}
+$$
+
+$$
+\frac{d}{dx} \ln x = \frac{1}{x}
+$$
+
 ## Triangle
 
 **Definition** (geometric).
@@ -1006,10 +1184,26 @@ $$
 ax + b = 0, \quad a, b \in \mathbb{R}, \quad a \neq 0
 $$
 
+**Definition** (linear function).
+
+$$
+f(x) = ax + b
+$$
+
 **Proposition** (root).
 
 $$
 x = -\frac{b}{a}
+$$
+
+**Proposition** (monotonicity).
+
+$$
+f \text{ strictly increasing} \iff a \gt 0
+$$
+
+$$
+f \text{ strictly decreasing} \iff a \lt 0
 $$
 
 **Definition** (slope).
@@ -1064,6 +1258,12 @@ $$
 ax^2 + bx + c = 0, \quad a, b, c \in \mathbb{R}, \quad a \neq 0
 $$
 
+**Definition** (quadratic function).
+
+$$
+f(x) = ax^2 + bx + c
+$$
+
 **Definition** (discriminant).
 
 $$
@@ -1084,11 +1284,25 @@ $$
 \Delta < 0 \iff \text{two complex conjugate roots}
 $$
 
+**Proposition** (domain and range).
+
+$$
+\text{domain} = \mathbb{R}, \quad \text{range} = \left[-\frac{\Delta}{4a}, +\infty\right) \text{ if } a \gt 0, \quad \text{range} = \left(-\infty, -\frac{\Delta}{4a}\right] \text{ if } a \lt 0
+$$
+
+**Proposition** (symmetry).
+
+$$
+f(-x) = f(x) \iff b = 0 \quad \text{(even, symmetric about } x = 0\text{)}
+$$
+
 **Definition** (vertex).
 
 $$
-(h, k) \coloneqq \left(-\frac{b}{2a}, c - \frac{b^2}{4a}\right) = \left(-\frac{b}{2a}, -\frac{\Delta}{4a}\right)
+(h, k) \coloneqq \left(-\frac{b}{2a}, -\frac{\Delta}{4a}\right)
 $$
+
+###### Remark. The vertex $(h, k)$ is the maximum of the parabola if $a \lt 0$ and the minimum if $a \gt 0$. The axis of symmetry is $x = h$.
 
 **Definition** (forms).
 
@@ -1104,17 +1318,13 @@ $$
 a(x - x_1)(x - x_2) = 0 \quad \text{(factored)}
 $$
 
-**Remark**. The vertex $(h, k)$ is the maximum of the parabola if $a \lt 0$ and the minimum if $a \gt 0$. The axis of symmetry is $x = h$.
-
-axis of symetry as middle point of two roots #todo
-
 **Theorem** (quadratic formula).
 
 $$
 x = \frac{-b \pm \sqrt{\Delta}}{2a}
 $$
 
-**Remark**. Also know as Bhaskara's formula.
+###### Remark. Also known as Bhaskara's formula.
 
 **Corollary** (rationalized form).
 
@@ -1164,73 +1374,69 @@ $$
 ax^3 + bx^2 + cx + d = 0, \quad a, b, c, d \in \mathbb{R}, \quad a \neq 0
 $$
 
+**Definition** (cubic function).
+
+$$
+f(x) = ax^3 + bx^2 + cx + d
+$$
+
+**Proposition** (domain and range).
+
+$$
+\text{domain} = \mathbb{R}, \quad \text{range} = \mathbb{R}
+$$
+
+**Proposition** (symmetry).
+
+$$
+f(-x) = -f(x) \iff b = d = 0 \quad \text{(odd, symmetric about origin)}
+$$
+
 **Definition** (depressed cubic).
 
-The substitution $x = t - \dfrac{b}{3a}$ eliminates the quadratic term, yielding
-
 $$
-t^3 + pt + q = 0
-$$
-
-where
-
-$$
-p = \frac{3ac - b^2}{3a^2}, \quad q = \frac{2b^3 - 9abc + 27a^2 d}{27a^3}
+x = t - \frac{b}{3a} \implies t^3 + pt + q = 0, \quad p = \frac{3ac - b^2}{3a^2}, \quad q = \frac{2b^3 - 9abc + 27a^2 d}{27a^3}
 $$
 
 **Definition** (discriminant).
 
 $$
-\Delta \coloneqq 18abcd - 4b^3d + b^2c^2 - 4ac^3 - 27a^2d^2
+\Delta \coloneqq 18abcd - 4b^3 d + b^2 c^2 - 4ac^3 - 27a^2 d^2
 $$
 
 **Theorem** (nature of roots).
 
 $$
-\Delta > 0 \implies \text{three distinct real roots}
+\Delta > 0 \iff \text{three distinct real roots}
 $$
 
 $$
-\Delta = 0 \implies \text{repeated root (at least two roots coincide)}
+\Delta = 0 \iff \text{repeated root}
 $$
 
 $$
-\Delta < 0 \implies \text{one real root and two complex conjugate roots}
+\Delta < 0 \iff \text{one real root and two complex conjugate roots}
 $$
 
-**Theorem** (Cardano's formula).
-
-Let $t^3 + pt + q = 0$. Define
+**Definition** (Cardano auxiliary).
 
 $$
 D \coloneqq \left(\frac{q}{2}\right)^2 + \left(\frac{p}{3}\right)^3
 $$
 
-Then one real root is
+**Theorem** (Cardano's formula).
 
 $$
-t = \sqrt[3]{-\frac{q}{2} + \sqrt{D}} + \sqrt[3]{-\frac{q}{2} - \sqrt{D}}
+t = \sqrt[3]{-\frac{q}{2} + \sqrt{D}} + \sqrt[3]{-\frac{q}{2} - \sqrt{D}}, \quad x = t - \frac{b}{3a}
 $$
-
-and the full solution to $ax^3 + bx^2 + cx + d = 0$ is recovered via $x = t - \dfrac{b}{3a}$.
 
 **Proposition** (Vieta's formulas).
 
-Let $x_1, x_2, x_3$ be the roots of $ax^3 + bx^2 + cx + d = 0$. Then
-
 $$
-x_1 + x_2 + x_3 = -\frac{b}{a}
+x_1, x_2, x_3 \text{ roots} \implies x_1 + x_2 + x_3 = -\frac{b}{a}, \quad x_1 x_2 + x_1 x_3 + x_2 x_3 = \frac{c}{a}, \quad x_1 x_2 x_3 = -\frac{d}{a}
 $$
 
-$$
-x_1 x_2 + x_1 x_3 + x_2 x_3 = \frac{c}{a}
-$$
-
-$$
-x_1 x_2 x_3 = -\frac{d}{a}
-$$
-
-**Remark.** Cardano's formula was published in 1545 in *Ars Magna* by Gerolamo Cardano, though the method was originally discovered by Scipione del Ferro and Niccolò Tartaglia. The quartic was solved shortly after by Lodovico Ferrari; Abel and Ruffini later proved no general algebraic solution exists for degree $\geq 5$.
+###### Remark. Cardano's formula appeared in <em>Ars Magna</em> (1545), though the method originated with del Ferro and Tartaglia. The quartic was solved by Ferrari; Abel and Ruffini proved no general algebraic solution exists for degree $\geq 5$.
 
 ## Limit
 
