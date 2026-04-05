@@ -1,4 +1,6 @@
-A personal notebook of selected results.
+A personal notebook of results. 
+
+(under construction...)
 
 ---
 
