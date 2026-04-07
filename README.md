@@ -1446,6 +1446,8 @@ $$
 
 ###### Remark. Cardano's formula appeared in <em>Ars Magna</em> (1545), though the method originated with del Ferro and Tartaglia. The quartic was solved by Ferrari; Abel and Ruffini proved no general algebraic solution exists for degree $\geq 5$.
 
+# Differential Calculus 
+
 ## Limit
 
 **Definition** ($\epsilon - \delta$ definition).
@@ -1474,7 +1476,9 @@ $$
 \frac{dy}{dx} \coloneqq \lim_{\Delta x \to 0} \frac{f(x + \Delta x) - f(x)}{\Delta x}, \quad y = f(x)
 $$
 
-## Integral
+# Integral Calculus
+
+## Integration
 
 **Definition** (Riemann sum).
 
@@ -1506,6 +1510,32 @@ $$
 \int f(x) \ dx \coloneqq F(x) + C, \quad C \in \mathbb{R}
 $$
 
+**Proposition** (properties).
+
+$$
+\int k f(x) \, dx = k \int f(x) \, dx, \quad k \in \mathbb{R}
+$$
+
+$$
+\int [f(x) \pm g(x)] \, dx = \int f(x) \, dx \pm \int g(x) \, dx
+$$
+
+$$
+\int [af(x) + bg(x)] \, dx = a \int f(x) \, dx + b \int g(x) \, dx \quad \text{(linearity)}
+$$
+
+$$
+\int f(x) g'(x) \, dx = f(x)g(x) - \int f'(x) g(x) \, dx \quad \text{(integration by parts)}
+$$
+
+$$
+\int f(g(x)) g'(x) \, dx = F(g(x)) + C \quad \text{(substitution)}
+$$
+
+$$
+\int f(ax + b) \, dx = \frac{1}{a} F(ax + b) + C, \quad a \neq 0
+$$
+
 **Theorem** (Fundamental Theorem of Calculus, Part I).
 
 $$
@@ -1516,6 +1546,32 @@ $$
 
 $$
 \int_{a}^{b} f(x) \ dx = F(b) - F(a)
+$$
+
+**Proposition** (properties).
+
+$$
+\int_{a}^{a} f(x) \, dx = 0
+$$
+
+$$
+\int_{a}^{b} f(x) \, dx = -\int_{b}^{a} f(x) \, dx
+$$
+
+$$
+\int_{a}^{b} f(x) \, dx + \int_{b}^{c} f(x) \, dx = \int_{a}^{c} f(x) \, dx \quad \text{(additivity)}
+$$
+
+$$
+\int_{a}^{b} [cf(x) + dg(x)] \, dx = c\int_{a}^{b} f(x) \, dx + d\int_{a}^{b} g(x) \, dx \quad \text{(linearity)}
+$$
+
+$$
+\int_{a}^{b} f(x) \, dx \leq \int_{a}^{b} g(x) \, dx \quad \text{if } f(x) \leq g(x) \text{ on } [a, b] \quad \text{(monotonicity)}
+$$
+
+$$
+\left|\int_{a}^{b} f(x) \, dx\right| \leq \int_{a}^{b} |f(x)| \, dx \quad \text{(triangle inequality)}
 $$
 
 ## Matrice
