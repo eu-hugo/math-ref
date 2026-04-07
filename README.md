@@ -1123,7 +1123,7 @@ $$
 **Proposition** (symmetry).
 
 $$
-x^{\log_b y} = y^{\log_y x}
+x^{\log_x y} = y^{\log_y x}
 $$
 
 **Proposition** (iterated logarithm).
