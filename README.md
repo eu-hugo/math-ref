@@ -1302,6 +1302,16 @@ $$
 (h, k) \coloneqq \left(-\frac{b}{2a}, -\frac{\Delta}{4a}\right)
 $$
 
+**Corollary.**
+
+$$
+x = h \quad \text{(axis of symmetry)}
+$$
+
+$$
+(h, k) \text{ is a minimum if } a \gt 0, \text{ a maximum if } a \lt 0
+$$
+
 **Definition** (forms).
 
 $$
@@ -1315,8 +1325,6 @@ $$
 $$
 a(x - x_1)(x - x_2) = 0 \quad \text{(factored)}
 $$
-
-###### Remark. The vertex $(h, k)$ is the maximum of the parabola if $a \lt 0$ and the minimum if $a \gt 0$. The axis of symmetry is $x = h$.
 
 **Theorem** (quadratic formula).
 
