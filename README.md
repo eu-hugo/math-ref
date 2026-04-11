@@ -273,7 +273,13 @@ $$
 **Definition** (domain, codomain, image).
 
 $$
-\text{domain}(f) = A, \quad \text{codomain}(f) = B, \quad \text{image}(f) = \{f(x) \mid x \in A\} \subseteq B
+\text{dom}(f) \coloneqq A, \quad \text{cod}(f) \coloneqq B, \quad \text{im}(f) \coloneqq \lbrace f(x) \mid x \in A \rbrace
+$$
+
+**Proposition.**
+
+$$
+\text{im}(f) \subseteq \text{cod}(f)
 $$
 
 **Definition** (injectivity).
@@ -326,7 +332,7 @@ $$
 f : \mathbb{R} \to \begin{cases} \mathbb{R}^+ \cup \{0\} & n \text{ even} \\ \mathbb{R} & n \text{ odd} \end{cases}, \quad f(x) = x^n, \quad n \in \mathbb{Z}
 $$
 
-**Proposition.**
+**Proposition** (parity).
 
 $$
 n \text{ even} \implies f \text{ even}
@@ -342,7 +348,7 @@ $$
 f : \mathbb{R} \to \mathbb{R}^+ \cup \{0\}, \quad f(x) = |x|
 $$
 
-**Proposition.**
+**Proposition** (parity).
 
 $$
 f \text{ even}
@@ -352,6 +358,36 @@ $$
 
 $$
 f : \mathbb{R}^+ \cup \{0\} \to \mathbb{R}^+ \cup \{0\}, \quad f(x) = \sqrt{x}
+$$
+
+**Proposition** (strictly increasing).
+
+$$
+x_1 \lt x_2 \implies f(x_1) \lt f(x_2)
+$$
+
+**Definition** (reciprocal function).
+
+$$
+f : \mathbb{R} \setminus \lbrace 0 \rbrace \to \mathbb{R} \setminus \lbrace 0 \rbrace, \quad f(x) = \frac{1}{x}
+$$
+
+**Proposition** (parity).
+
+$$
+f \text{ odd}
+$$
+
+**Definition** (floor function).
+
+$$
+f : \mathbb{R} \to \mathbb{Z}, \quad f(x) = \lfloor x \rfloor \coloneqq \max\{n \in \mathbb{Z} \mid n \leq x\}
+$$
+
+**Definition** (ceiling function).
+
+$$
+f : \mathbb{R} \to \mathbb{Z}, \quad f(x) = \lceil x \rceil \coloneqq \min\{n \in \mathbb{Z} \mid n \geq x\}
 $$
 
 **Definition** (exponential function).
