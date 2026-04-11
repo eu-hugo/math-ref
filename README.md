@@ -297,7 +297,7 @@ $$
 **Definition** (inverse function).
 
 $$
-f \text{ bijective} \implies \exists f^{-1} : B \to A,\ f^{-1}(f(x)) = x \land f(f^{-1}(y)) = y
+f \text{ bijective} \implies \exists f^{-1} : B \to A, \quad f^{-1}(f(x)) = x \land f(f^{-1}(y)) = y
 $$
 
 **Definition** (composition).
@@ -323,62 +323,44 @@ $$
 **Definition** (power function).
 
 $$
-f(x) = x^n, \quad n \in \mathbb{Z}
+f : \mathbb{R} \to \begin{cases} \mathbb{R}^+ \cup \{0\} & n \text{ even} \\ \mathbb{R} & n \text{ odd} \end{cases}, \quad f(x) = x^n, \quad n \in \mathbb{Z}
 $$
 
 **Proposition.**
 
 $$
-\text{domain} = \mathbb{R}, \quad \text{range} = \mathbb{R}^+ \cup \{0\}\ \text{if } n \text{ even},\quad \text{range} = \mathbb{R}\ \text{if } n \text{ odd}
+n \text{ even} \implies f \text{ even}
 $$
 
 $$
-f(-x) = f(x) \iff n \text{ even}
-$$
-
-$$
-f(-x) = -f(x) \iff n \text{ odd}
+n \text{ odd} \implies f \text{ odd}
 $$
 
 **Definition** (absolute value function).
 
 $$
-f(x) = |x|
+f : \mathbb{R} \to \mathbb{R}^+ \cup \{0\}, \quad f(x) = |x|
 $$
 
 **Proposition.**
 
 $$
-\text{domain} = \mathbb{R}, \quad \text{range} = \mathbb{R}^+ \cup \{0\}
-$$
-
-$$
-f(-x) = f(x) \quad \text{(even)}
+f \text{ even}
 $$
 
 **Definition** (square root function).
 
 $$
-f(x) = \sqrt{x}
-$$
-
-**Proposition.**
-
-$$
-\text{domain} = \mathbb{R}^+ \cup \{0\}, \quad \text{range} = \mathbb{R}^+ \cup \{0\}
+f : \mathbb{R}^+ \cup \{0\} \to \mathbb{R}^+ \cup \{0\}, \quad f(x) = \sqrt{x}
 $$
 
 **Definition** (exponential function).
 
 $$
-f(x) = b^x, \quad b \in \mathbb{R}^+, \quad b \neq 1
+f : \mathbb{R} \to \mathbb{R}^+, \quad f(x) = b^x, \quad b \in \mathbb{R}^+, \quad b \neq 1
 $$
 
 **Proposition.**
-
-$$
-\text{domain} = \mathbb{R}, \quad \text{range} = \mathbb{R}^+
-$$
 
 $$
 b \gt 1 \implies f \text{ strictly increasing}
@@ -388,17 +370,15 @@ $$
 0 \lt b \lt 1 \implies f \text{ strictly decreasing}
 $$
 
-**Definition** (natural exponential function).
+###### Remark. Exponential growth and exponential decay.
+
+**Corollary** (natural exponential).
 
 $$
 f(x) = e^x
 $$
 
-**Proposition** (derivative).
-
-$$
-\text{domain} = \mathbb{R}, \quad \text{range} = \mathbb{R}^+
-$$
+**Corollary** (derivative).
 
 $$
 \frac{d}{dx} e^x = e^x
@@ -407,14 +387,10 @@ $$
 **Definition** (logarithmic function).
 
 $$
-f(x) = \log_b x, \quad b \in \mathbb{R}^+, \quad b \neq 1
+f : \mathbb{R}^+ \to \mathbb{R}, \quad f(x) = \log_b x, \quad b \in \mathbb{R}^+, \quad b \neq 1
 $$
 
-**Proposition**.
-
-$$
-\text{domain} = \mathbb{R}^+, \quad \text{range} = \mathbb{R}
-$$
+**Proposition.**
 
 $$
 b \gt 1 \implies f \text{ strictly increasing}
@@ -424,20 +400,10 @@ $$
 0 \lt b \lt 1 \implies f \text{ strictly decreasing}
 $$
 
-**Definition** (natural logarithm function).
+**Corollary** (natural logarithm function).
 
 $$
 f(x) = \ln x
-$$
-
-**Proposition** (derivative).
-
-$$
-\text{domain} = \mathbb{R}^+, \quad \text{range} = \mathbb{R}
-$$
-
-$$
-\frac{d}{dx} \ln x = \frac{1}{x}
 $$
 
 ## Triangle
@@ -765,13 +731,7 @@ $$
 **Notation.**
 
 $$
-\text{addend} + \text{addend} = \text{sum}
-$$
-
-**Remark** (synonyms).
-
-$$
-\text{addend} = \text{summand} = \text{augend}
+\text{addend or summand} + \text{addend} = \text{sum or augend}
 $$
 
 **Proposition.**
@@ -830,12 +790,6 @@ $$
 
 $$
 \text{multiplicand} \times \text{multiplier} = \text{product}
-$$
-
-**Remark** (synonyms).
-
-$$
-\text{multiplicand} \times \text{multiplier} = \text{factor} \times \text{factor}
 $$
 
 **Proposition.**
