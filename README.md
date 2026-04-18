@@ -372,40 +372,52 @@ $$
 \theta \in \mathbb{R}, \quad \text{angles in radians unless stated otherwise}
 $$
 
+**Convention** (standard triangle elements).
+
+$$
+a, b, c \in \mathbb{R}^+\ \text{(side lengths)}, \quad A, B, C \in \left(0, \pi\right)\ \text{(opposite angles)}, \quad R \in \mathbb{R}^+\ \text{(circumradius)}
+$$
+
+**Definition** (trigonometric functions, right triangle).
+
+$$
+\sin\theta \coloneqq \frac{\text{opposite}}{\text{hypotenuse}}, \quad \cos\theta \coloneqq \frac{\text{adjacent}}{\text{hypotenuse}}, \quad \tan\theta \coloneqq \frac{\text{opposite}}{\text{adjacent}}, \quad \theta \in \left(0, \frac{\pi}{2}\right)
+$$
+
+**Corollary** (reciprocal functions).
+
+$$
+\csc\theta \coloneqq \frac{1}{\sin\theta}, \quad \sec\theta \coloneqq \frac{1}{\cos\theta}, \quad \cot\theta \coloneqq \frac{1}{\tan\theta} = \frac{\cos\theta}{\sin\theta}
+$$
+
 **Definition** (unit circle).
 
 $$
 S^1 \coloneqq \lbrace (x, y) \in \mathbb{R}^2 \mid x^2 + y^2 = 1 \rbrace
 $$
 
-**Definition** (trigonometric functions).
-
-Let $(\cos\theta, \sin\theta)$ be the point on $S^1$ reached by traversing arc length $|\theta|$ from $(1, 0)$, counterclockwise if $\theta \gt 0$, clockwise if $\theta \lt 0$.
+**Definition** (trigonometric functions, unit circle).
 
 $$
-\sin : \mathbb{R} \to [-1, 1], \quad \sin\theta \coloneqq y
+\theta \coloneqq \text{signed arc length from } (1, 0) \text{ along } S^1, \quad \theta \in \mathbb{R}
 $$
 
 $$
-\cos : \mathbb{R} \to [-1, 1], \quad \cos\theta \coloneqq x
+(\cos\theta, \sin\theta) \coloneqq (x, y) \in S^1
 $$
 
 $$
-\tan : \mathbb{R} \setminus \left\lbrace \frac{\pi}{2} + n\pi \mid n \in \mathbb{Z} \right\rbrace \to \mathbb{R}, \quad \tan\theta \coloneqq \frac{\sin\theta}{\cos\theta}
-$$
-
-**Definition** (reciprocal functions).
-
-$$
-\csc\theta \coloneqq \frac{1}{\sin\theta}, \quad \sin\theta \neq 0
+\sin : \mathbb{R} \to [-1, 1], \quad \cos : \mathbb{R} \to [-1, 1], \quad \tan : \mathbb{R} \setminus \left\lbrace \frac{\pi}{2} + n\pi \mid n \in \mathbb{Z} \right\rbrace \to \mathbb{R}
 $$
 
 $$
-\sec\theta \coloneqq \frac{1}{\cos\theta}, \quad \cos\theta \neq 0
+\tan\theta \coloneqq \frac{\sin\theta}{\cos\theta}
 $$
 
+**Definition** (trigonometric functions, power series).
+
 $$
-\cot\theta \coloneqq \frac{\cos\theta}{\sin\theta}, \quad \sin\theta \neq 0
+\sin\theta \coloneqq \sum_{n=0}^{\infty} \frac{(-1)^n \theta^{2n+1}}{(2n+1)!}, \quad \cos\theta \coloneqq \sum_{n=0}^{\infty} \frac{(-1)^n \theta^{2n}}{(2n)!}
 $$
 
 **Proposition** (Pythagorean identities).
@@ -454,13 +466,25 @@ $$
 
 $$
 \begin{array}{c|cccccc}
-\theta & 0 & \dfrac{\pi}{6} & \dfrac{\pi}{4} & \dfrac{\pi}{3} & \dfrac{\pi}{2} & \pi \\[6pt]
-\hline \\[-6pt]
-\sin\theta & 0 & \dfrac{1}{2} & \dfrac{\sqrt{2}}{2} & \dfrac{\sqrt{3}}{2} & 1 & 0 \\[10pt]
-\cos\theta & 1 & \dfrac{\sqrt{3}}{2} & \dfrac{\sqrt{2}}{2} & \dfrac{1}{2} & 0 & -1 \\[10pt]
-\tan\theta & 0 & \dfrac{1}{\sqrt{3}} & 1 & \sqrt{3} & \text{undef} & 0
+\hline
+\theta & 0 & \frac{\pi}{6} & \frac{\pi}{4} & \frac{\pi}{3} & \frac{\pi}{2} & \pi \\
+\hline
+\sin\theta & 0 & \frac{1}{2} & \frac{\sqrt{2}}{2} & \frac{\sqrt{3}}{2} & 1 & 0 \\
+\cos\theta & 1 & \frac{\sqrt{3}}{2} & \frac{\sqrt{2}}{2} & \frac{1}{2} & 0 & -1 \\
+\tan\theta & 0 & \frac{1}{\sqrt{3}} & 1 & \sqrt{3} & \text{undefined} & 0 \\
+\hline
 \end{array}
 $$
+
+<div align="center">
+
+| $\theta$ | $0$ | $\pi/6$ | $\pi/4$ | $\pi/3$ | $\pi/2$ | $\pi$ |
+|---|---|---|---|---|---|---|
+| $\sin\theta$ | $0$ | $1/2$ | $\sqrt{2}/2$ | $\sqrt{3}/2$ | $1$ | $0$ |
+| $\cos\theta$ | $1$ | $\sqrt{3}/2$ | $\sqrt{2}/2$ | $1/2$ | $0$ | $-1$ |
+| $\tan\theta$ | $0$ | $1/\sqrt{3}$ | $1$ | $\sqrt{3}$ | undef | $0$ |
+
+</div>
 
 **Proposition** (cofunction identities).
 
@@ -562,18 +586,24 @@ $$
 c^2 = a^2 + b^2 - 2ab\cos C
 $$
 
-**Notation** (inverse trigonometric functions).
+**Theorem** (law of tangents).
 
 $$
-\arcsin : [-1, 1] \to \left[-\frac{\pi}{2}, \frac{\pi}{2}\right]
+\frac{a - b}{a + b} = \frac{\tan\dfrac{A - B}{2}}{\tan\dfrac{A + B}{2}}
+$$
+
+**Definition** (inverse trigonometric functions).
+
+$$
+\arcsin \coloneqq \sin^{-1} : [-1, 1] \to \left[-\frac{\pi}{2}, \frac{\pi}{2}\right]
 $$
 
 $$
-\arccos : [-1, 1] \to [0, \pi]
+\arccos \coloneqq \cos^{-1} : [-1, 1] \to [0, \pi]
 $$
 
 $$
-\arctan : \mathbb{R} \to \left(-\frac{\pi}{2}, \frac{\pi}{2}\right)
+\arctan \coloneqq \tan^{-1} : \mathbb{R} \to \left(-\frac{\pi}{2}, \frac{\pi}{2}\right)
 $$
 
 
