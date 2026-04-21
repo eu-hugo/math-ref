@@ -364,6 +364,46 @@ spaces in code for `:`, `\to`, `\mapsto`, `\iff`, `=`, `+`, `-`, ",", etc; use `
 
 ---
 
+## Sequences and Series
+
+**Definition** (arithmetic sequence).
+
+$$
+a_n \coloneqq a_1 + (n-1)d, \quad d \in \mathbb{R}, \quad n \in \mathbb{N}
+$$
+
+$$
+a_n = a_{n-1} + d \quad \text{(recursive)}
+$$
+
+**Proposition** (arithmetic sum).
+
+$$
+S_n \coloneqq \sum_{k=1}^{n} a_k = \frac{n}{2}(2a_1 + (n-1)d) = \frac{n}{2}(a_1 + a_n)
+$$
+
+**Definition** (geometric sequence).
+
+$$
+a_n \coloneqq a_1 \cdot r^{n-1}, \quad r \in \mathbb{R} \setminus \lbrace 0 \rbrace, \quad n \in \mathbb{N}
+$$
+
+$$
+a_n = a_{n-1} \cdot r \quad \text{(recursive)}
+$$
+
+**Proposition** (geometric sum).
+
+$$
+S_n \coloneqq \sum_{k=1}^{n} a_k = a_1 \cdot \frac{1 - r^n}{1 - r} = a_1 \cdot \frac{r^n - 1}{r - 1}, \quad r \neq 1
+$$
+
+**Corollary** (infinite geometric series).
+
+$$
+S \coloneqq \sum_{k=1}^{\infty} a_k = \frac{a_1}{1 - r}, \quad |r| \lt 1
+$$
+
 ## Trigonometry
 
 **Convention.**
