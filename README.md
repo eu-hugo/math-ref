@@ -366,6 +366,24 @@ spaces in code for `:`, `\to`, `\mapsto`, `\iff`, `=`, `+`, `-`, ",", etc; use `
 
 ## Sequences and Series
 
+**Definition** (sequence).
+
+$$
+(a_n)_{n \in \mathbb{N}} = a_1, a_2, a_3, \ldots
+$$
+
+**Definition** (series).
+
+$$
+S_n \coloneqq \sum_{k=1}^{n} a_k = a_1 + a_2 + \cdots + a_n
+$$
+
+**Notation.**
+
+$$
+a_n : \text{n-th term}, \quad a_1 : \text{first term}, \quad d : \text{common difference}, \quad r : \text{common ratio}, \quad n : \text{number of terms}
+$$
+
 **Definition** (arithmetic sequence).
 
 $$
@@ -379,7 +397,7 @@ $$
 **Proposition** (arithmetic sum).
 
 $$
-S_n \coloneqq \sum_{k=1}^{n} a_k = \frac{n}{2}(2a_1 + (n-1)d) = \frac{n}{2}(a_1 + a_n)
+S_n = \frac{n}{2}(2a_1 + (n-1)d) = \frac{n}{2}(a_1 + a_n)
 $$
 
 **Definition** (geometric sequence).
@@ -395,7 +413,7 @@ $$
 **Proposition** (geometric sum).
 
 $$
-S_n \coloneqq \sum_{k=1}^{n} a_k = a_1 \cdot \frac{1 - r^n}{1 - r} = a_1 \cdot \frac{r^n - 1}{r - 1}, \quad r \neq 1
+S_n = a_1 \cdot \frac{1 - r^n}{1 - r} = a_1 \cdot \frac{r^n - 1}{r - 1}, \quad r \neq 1
 $$
 
 **Corollary** (infinite geometric series).
