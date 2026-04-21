@@ -1,7 +1,5 @@
 **Convention.** Each formula is a canonical representative of its equivalence class.
 
-**Notation.** Formula parameters are written as named quantities (e.g. $\text{radius}$, $\text{height}$); elsewhere standard variables apply.
-
 <!-- Taxonomy / editorial labels
 
 Primitive notion: Undefined foundational concept accepted without formal definition.
