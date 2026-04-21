@@ -845,6 +845,28 @@ $$
 f(x) = \ln x
 $$
 
+**Notation.**
+
+$$
+A : \text{amplitude}, \quad B : \text{period factor}, \quad C : \text{phase shift}, \quad D : \text{vertical shift}
+$$
+
+**Definition** (sinusoidal functions).
+
+$$
+f : \mathbb{R} \to [-1, 1], \quad f(x) \coloneqq A\sin(B(x - C)) + D, \quad A, B, C, D \in \mathbb{R}, \quad B \neq 0
+$$
+
+$$
+f : \mathbb{R} \to [-1, 1], \quad f(x) \coloneqq A\cos(B(x - C)) + D
+$$
+
+**Definition** (tangent function).
+
+$$
+f : \mathbb{R} \setminus \left\lbrace \frac{\pi}{2} + n\pi \mid n \in \mathbb{Z} \right\rbrace \to \mathbb{R}, \quad f(x) \coloneqq A\tan(B(x - C)) + D
+$$
+
 ## Triangle
 
 **Definition** (geometric).
