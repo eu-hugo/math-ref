@@ -1773,6 +1773,14 @@ $$
 
 ###### Remark. Vieta's formulas (monic case).
 
+**Proposition** (Loh's method).
+
+$$
+x^2 + bx + c = 0 \implies x = -\frac{b}{2}  \pm u, \quad u \coloneqq \sqrt{\frac{b^2}{4} - c}
+$$
+
+###### Remark. Roots are symmetric about their average $(x = \text{average} \pm \text{deviation})$.
+
 **Proposition** (root identities).
 
 $$
@@ -1859,7 +1867,7 @@ $$
 x_1, x_2, x_3 \text{ roots} \implies x_1 + x_2 + x_3 = -\frac{b}{a}, \quad x_1 x_2 + x_1 x_3 + x_2 x_3 = \frac{c}{a}, \quad x_1 x_2 x_3 = -\frac{d}{a}
 $$
 
-###### Remark. Cardano's formula appeared in <em>Ars Magna</em> (1545), though the method originated with del Ferro and Tartaglia. The quartic was solved by Ferrari; Abel and Ruffini proved no general algebraic solution exists for degree $\geq 5$.
+###### Remark. Abel and Ruffini proved no general algebraic solution exists for degree $\geq 5$.
 
 # Differential Calculus 
 
@@ -1898,7 +1906,7 @@ $$
 **Definition** (Riemann sum).
 
 $$
-S_n \coloneqq; \sum_{i=1}^{n} f(x_i^{\ast}) \Delta x_i, \quad x_i^{\ast} \in [x_{i-1}, x_i], \quad a = x_0 \lt \cdots \lt x_n = b
+S_n \coloneqq \sum_{i=1}^{n} f(x_i^{\ast}) \Delta x_i, \quad x_i^{\ast} \in [x_{i-1}, x_i], \quad a = x_0 \lt \cdots \lt x_n = b
 $$
 
 **Definition** (Riemann integral).
