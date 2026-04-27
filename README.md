@@ -704,7 +704,19 @@ $$
 **Definition** (inverse function).
 
 $$
-f \text{ bijective} \implies \exists f^{-1} : B \to A, \quad f^{-1}(f(x)) = x \land f(f^{-1}(y)) = y
+f^{-1} : B \to A \iff f^{-1} \circ f = \mathrm{id}_A \land f \circ f^{-1} = \mathrm{id}_B
+$$
+
+**Proposition** (existence and uniqueness).
+
+$$
+f : A \to B \text{ bijective} \iff \exists! f^{-1} : B \to A
+$$
+
+**Corollary** (pointwise form).
+
+$$
+f^{-1}(f(x)) = x\ \forall x \in A \land f(f^{-1}(y)) = y\ \forall y \in B
 $$
 
 **Definition** (composition).
@@ -726,6 +738,12 @@ f : A \to B,\quad A \subseteq \mathbb{R},\ A = -A,\quad f(-x) = -f(x)\ \forall x
 $$
 
 ## Elementary Functions
+
+**Definition** (identity function).
+
+$$
+\mathrm{id}_A : A \to A,\quad x \mapsto x
+$$
 
 **Definition** (power function).
 
