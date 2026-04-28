@@ -1022,7 +1022,7 @@ $$
 **Definition** (congruence).
 
 $$
-\triangle ABC \cong \triangle DEF \iff (\overline{AB} = \overline{DE} \land \overline{BC} = \overline{EF} \land \overline{CA} = \overline{FD} \land \angle A = \angle D \land \angle B = \angle E \land \angle C = \angle F)
+\triangle ABC \cong \triangle DEF \iff (\overline{AB} = \overline{DE} \land \overline{BC} = \overline{EF} \land \overline{CA} = \overline{FD} ) \land (\angle A = \angle D \land \angle B = \angle E \land \angle C = \angle F)
 $$
 
 **Definition** (similarity).
