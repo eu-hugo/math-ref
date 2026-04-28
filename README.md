@@ -1031,7 +1031,7 @@ $$
 \triangle ABC \sim \triangle DEF \iff (\angle A = \angle D \land \angle B = \angle E \land \angle C = \angle F)
 $$
 
-**Corollary.**
+**Corollary** (side ratios).
 
 $$
 \triangle ABC \sim \triangle DEF \implies \frac{AB}{DE} = \frac{BC}{EF} = \frac{AC}{DF} = \text{scale factor}, \quad \text{scale factor} \in \mathbb{R}^+
