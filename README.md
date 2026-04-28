@@ -1019,46 +1019,70 @@ $$
 a + b + c
 $$
 
-**Definition** (congruence).
-
-$$
-\triangle ABC \cong \triangle DEF \iff (\overline{AB} = \overline{DE} \land \overline{BC} = \overline{EF} \land \overline{CA} = \overline{FD} ) \land (\angle A = \angle D \land \angle B = \angle E \land \angle C = \angle F)
-$$
-
 **Definition** (similarity).
 
 $$
 \triangle ABC \sim \triangle DEF \iff (\angle A = \angle D \land \angle B = \angle E \land \angle C = \angle F)
 $$
 
-**Corollary** (side ratios).
+**Proposition** (angle-angle (AA) similarity).
 
 $$
-\triangle ABC \sim \triangle DEF \implies \frac{AB}{DE} = \frac{BC}{EF} = \frac{AC}{DF} = \text{scale factor}, \quad \text{scale factor} \in \mathbb{R}^+
+\triangle ABC \sim \triangle DEF \implies \angle A = \angle D \land \angle B = \angle E 
 $$
 
-**Proposition** (similarity criteria).
+**Proposition** (side-angle-side (SAS) similarity).
 
 $$
-\angle A = \angle D \land \angle B = \angle E \quad \text{(AA)}
+\triangle ABC \sim \triangle DEF \implies \frac{AB}{DE} = \frac{AC}{DF} \land \angle A = \angle D
 $$
 
-$$
-\frac{AB}{DE} = \frac{AC}{DF} \land \angle A = \angle D \quad \text{(SAS)}
-$$
+**Proposition** (side-side-side (SSS) similarity).
 
 $$
-\frac{AB}{DE} = \frac{BC}{EF} = \frac{AC}{DF} \quad \text{(SSS)}
+\triangle ABC \sim \triangle DEF \implies \frac{AB}{DE} = \frac{BC}{EF} = \frac{CA}{FD} 
 $$
 
-**Corollary** (scale factor).
+**Proposition** (side ratios).
 
 $$
-\text{perimeter}(\triangle ABC) = \text{scale factor} \cdot \text{perimeter}(\triangle DEF)
+\triangle ABC \sim \triangle DEF \implies \exists k \in \mathbb{R}^{+} : \frac{AB}{DE} = \frac{BC}{EF} = \frac{CA}{FD} = k \quad \text{(scale factor)}
 $$
 
+**Corollary** (similar perimeter).
+
 $$
-\text{area}(\triangle ABC) = \text{(scale factor)}^2 \cdot \text{area}(\triangle DEF)
+\text{perimeter}(\triangle ABC) = k \cdot \text{perimeter}(\triangle DEF)
+$$
+
+**Corollary** (similar area).
+
+$$
+\text{area}(\triangle ABC) = k^2 \cdot \text{area}(\triangle DEF)
+$$
+
+**Definition** (congruence).
+
+$$
+\triangle ABC \cong \triangle DEF \iff (\overline{AB} = \overline{DE} \land \overline{BC} = \overline{EF} \land \overline{CA} = \overline{FD} ) \land (\angle A = \angle D \land \angle B = \angle E \land \angle C = \angle F)
+$$
+
+**Proposition** (side-side-side (SSS) congruence).
+
+$$
+\triangle ABC \cong \triangle DEF \implies AB = DE \land BC = EF \land CA = FD
+$$
+
+**Proposition** (side-angle-side (SAS) congruence).
+
+$$
+\triangle ABC \cong \triangle DEF \implies AB = DE \land AC = DF \land \angle A = \angle D
+$$
+
+**Proposition** (angle-side-angle (ASA) congruence).
+
+$$
+\triangle ABC \cong \triangle DEF \implies \angle A = \angle D \land \angle B = \angle E \land AB = DE
 $$
 
 ## Cube
