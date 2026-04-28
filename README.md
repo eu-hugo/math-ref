@@ -1040,11 +1040,11 @@ $$
 **Proposition** (similarity criteria).
 
 $$
-\angle A = \angle D,\ \angle B = \angle E \quad \text{(AA)}
+\angle A = \angle D \land \angle B = \angle E \quad \text{(AA)}
 $$
 
 $$
-\frac{AB}{DE} = \frac{AC}{DF},\ \angle A = \angle D \quad \text{(SAS)}
+\frac{AB}{DE} = \frac{AC}{DF} \land \angle A = \angle D \quad \text{(SAS)}
 $$
 
 $$
