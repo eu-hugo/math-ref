@@ -663,7 +663,7 @@ $$
 $$
 
 
-## Function
+## Functions
 
 **Definition** (function).
 
@@ -750,8 +750,6 @@ $$
 $$
 f : A \to B,\quad A \subseteq \mathbb{R},\ A = -A,\quad f(-x) = -f(x)\ \forall x \in A
 $$
-
-## Elementary Functions
 
 **Definition** (identity function).
 
