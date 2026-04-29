@@ -721,6 +721,24 @@ $$
 (g \circ f)(x) \coloneqq g(f(x)), \quad f : A \to B,\ g : B \to C
 $$
 
+**Definition** (monotonicity).
+
+$$
+f \text{ increasing} \iff x_1 \leq x_2 \implies f(x_1) \leq f(x_2)
+$$
+
+$$
+f \text{ strictly increasing} \iff x_1 < x_2 \implies f(x_1) < f(x_2)
+$$
+
+$$
+f \text{ decreasing} \iff x_1 \leq x_2 \implies f(x_1) \geq f(x_2)
+$$
+
+$$
+f \text{ strictly decreasing} \iff x_1 < x_2 \implies f(x_1) > f(x_2)
+$$
+
 **Definition** (even function).
 
 $$
