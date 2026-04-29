@@ -1025,22 +1025,22 @@ $$
 \triangle ABC \sim \triangle DEF \iff (\angle A = \angle D \land \angle B = \angle E \land \angle C = \angle F)
 $$
 
-**Proposition** (angle-angle (AA) similarity).
+**Proposition** (angle-angle (AA) similarity sufficient condition).
 
 $$
-\triangle ABC \sim \triangle DEF \implies \angle A = \angle D \land \angle B = \angle E 
+\angle A = \angle D \land \angle B = \angle E \implies \triangle ABC \sim \triangle DEF
 $$
 
 **Proposition** (side-angle-side (SAS) similarity).
 
 $$
-\triangle ABC \sim \triangle DEF \implies \frac{AB}{DE} = \frac{AC}{DF} \land \angle A = \angle D
+\frac{AB}{DE} = \frac{AC}{DF} \land \angle A = \angle D \implies \triangle ABC \sim \triangle DEF
 $$
 
 **Proposition** (side-side-side (SSS) similarity).
 
 $$
-\triangle ABC \sim \triangle DEF \implies \frac{AB}{DE} = \frac{BC}{EF} = \frac{CA}{FD} 
+\frac{AB}{DE} = \frac{BC}{EF} = \frac{CA}{FD} \implies \triangle ABC \sim \triangle DEF
 $$
 
 **Proposition** (side ratios).
@@ -1052,37 +1052,37 @@ $$
 **Corollary** (similar perimeter).
 
 $$
-\text{perimeter}(\triangle ABC) = k \cdot \text{perimeter}(\triangle DEF)
+\triangle ABC \sim \triangle DEF \implies \text{perimeter}(\triangle ABC) = k \cdot \text{perimeter}(\triangle DEF)
 $$
 
 **Corollary** (similar area).
 
 $$
-\text{area}(\triangle ABC) = k^2 \cdot \text{area}(\triangle DEF)
+\triangle ABC \sim \triangle DEF \implies \text{area}(\triangle ABC) = k^2 \cdot \text{area}(\triangle DEF)
 $$
 
 **Definition** (congruence).
 
 $$
-\triangle ABC \cong \triangle DEF \iff (\overline{AB} = \overline{DE} \land \overline{BC} = \overline{EF} \land \overline{CA} = \overline{FD} ) \land (\angle A = \angle D \land \angle B = \angle E \land \angle C = \angle F)
+\triangle ABC \cong \triangle DEF \iff (AB = DE \land BC = EF \land CA = FD) \land (\angle A = \angle D \land \angle B = \angle E \land \angle C = \angle F)
 $$
 
 **Proposition** (side-side-side (SSS) congruence).
 
 $$
-\triangle ABC \cong \triangle DEF \implies AB = DE \land BC = EF \land CA = FD
+AB = DE \land BC = EF \land CA = FD \implies \triangle ABC \cong \triangle DEF
 $$
 
 **Proposition** (side-angle-side (SAS) congruence).
 
 $$
-\triangle ABC \cong \triangle DEF \implies AB = DE \land AC = DF \land \angle A = \angle D
+AB = DE \land AC = DF \land \angle A = \angle D \implies \triangle ABC \cong \triangle DEF
 $$
 
 **Proposition** (angle-side-angle (ASA) congruence).
 
 $$
-\triangle ABC \cong \triangle DEF \implies \angle A = \angle D \land \angle B = \angle E \land AB = DE
+\angle A = \angle D \land \angle B = \angle E \land AB = DE \implies \triangle ABC \cong \triangle DEF
 $$
 
 ## Cube
