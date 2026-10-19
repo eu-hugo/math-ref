@@ -35,25 +35,6 @@ Taxonomy
 - Example: Concrete illustration of a concept or result.
 -->
 
-
----
-
-[Sequences and Series](#sequences-and-series)
-
----
-
-[I Foundations](#part-i-foundations)
-
-[II Algebra](#part-ii-algebra)
-
-[III Analysis](#part-iii-analysis)
-
-[IV Geometry](#part-iv-geometry)
-
-[V Discrete Mathematics](#part-v-discrete-mathematics)
-
-[VI Applied Mathematics](#part-vi-applied-mathematics)
-
 ---
 
 # Part I Foundations
@@ -258,7 +239,7 @@ Taxonomy
 #### Fundamental Theorem of Calculus
 #### Techniques of Integration
 #### Improper Integrals
-<!--### Sequences and Series-->
+### Sequences and Series
 #### Convergence Tests
 #### Taylor Series
 #### Maclaurin Series
