@@ -38,7 +38,9 @@ Taxonomy
 
 ---
 
-[click](#sequences-and-series)
+[Sequences and Series](#sequences-and-series)
+
+---
 
 [I Foundations](#part-i-foundations)
 
