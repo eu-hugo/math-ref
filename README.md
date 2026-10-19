@@ -38,6 +38,8 @@ Taxonomy
 
 ---
 
+[click](#sequences-and-series)
+
 [I Foundations](#part-i-foundations)
 
 [II Algebra](#part-ii-algebra)
