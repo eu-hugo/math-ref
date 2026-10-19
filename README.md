@@ -1,84 +1,40 @@
 **Convention.** Each formula is a canonical representative of its equivalence class.
 
-<!-- Taxonomy / editorial labels
-
-Primitive notion: Undefined foundational concept accepted without formal definition.
-Axiom / Postulate: Fundamental assumed truth; the unproven foundation of a system.
-Definition: Precise statement establishing the exact meaning of a concept.
-Theorem: Major, highly significant mathematical statement that has been proven.
-Proposition: Important, useful, standalone proven fact, lesser in scope than a theorem.
-Lemma: Helper result proven primarily to step toward a larger theorem.
-Corollary: Direct, immediate consequence of a preceding theorem or proposition.
-Property: Inherent, easily derived characteristic of a formally defined mathematical object.
-Claim: Localized, minor assertion often used internally within a larger proof.
-Proof: Rigorous logical deduction establishing the truth of a Theorem, Proposition, Lemma, or Claim.
-Conjecture: Educated guess believed true but currently lacking rigorous proof.
-Convention: Agreed-upon rule chosen to resolve ambiguity among valid options.
-Notation: Explicit assignment of symbols or shorthand to represent mathematical concepts.
-Remark: Supplementary context, historical note, useful perspective, or subtle observation. Optionally named for an established concept.
-Example: Concrete, specific instance illustrating a definition, theorem, or concept.
-
-Hierarquia axiomática: 
-
-Conceitos primitivos (indefinidos, para evitar regressão infinita) 
-> Axiomas/Postulados (verdades assumidas sobre os primitivos) 
-> Definições (de conceitos derivados, construídos a partir dos primitivos) 
-> Teoremas, Proposições, Lemas, etc.
-
--->
-
 <!--
+Editorial conventions
 
-Code:
+Structure
+- Heading levels: # Part, ## Field, ### Topic, #### Subtopic.
+- Format entries as **Type.** or **Type (Name).**
+- Name entries when identifying a distinct result or concept.
+- Foundational order: primitive notions → axioms/postulates →
+  definitions → derived results.
 
-\cdot  \times  \div  \pm  \mp
-\ast   \star   \circ  \bullet
-\oplus \otimes \ominus \oslash
-\cup   \cap    \sqcup  \sqcap
-\vee   \wedge
-\leq   \geq    \neq    \approx  \equiv  \sim  \simeq
-\subset \supset \subseteq \supseteq \in \notin
-\lt    \gt
+Notation
+- Use LaTeX commands instead of Unicode mathematical symbols.
+- Use $...$ for inline mathematics and $$...$$ for display mathematics.
+- Rely on default LaTeX spacing whenever possible.
+- For explicit spacing, use only a backslash followed by a
+  space or \quad.
 
-\to  \gets  \leftrightarrow
-\Rightarrow  \Leftarrow  \Leftrightarrow
-\mapsto  \hookrightarrow  \twoheadrightarrow
-\uparrow  \downarrow
-
-\lbrace \rbrace
-\langle \rangle
-\lfloor \rfloor
-\lceil  \rceil
-\vert   \Vert
-
-\coloneqq  \eqqcolon
-\triangleq  \doteq
-
-\forall  \exists  \nexists
-\neg  \land  \lor
-\top  \bot
-\vdash  \models
-
-\ldots  \cdots  \vdots  \ddots
-\infty  \partial  \nabla
-\emptyset  \varnothing
-\ell  \hbar
-\dagger  \ddagger
-
-\epsilon \varepsilon
-\phi     \varphi
-\theta   \vartheta
-\rho     \varrho
-\pi      \varpi
-\sigma   \varsigma
-
+Taxonomy
+- Primitive notion: Foundational concept left undefined.
+- Axiom / Postulate: Foundational statement accepted without proof.
+- Definition: Precise specification of a mathematical concept.
+- Theorem: Significant statement established by proof.
+- Proposition: Proven result of narrower scope than a theorem.
+- Lemma: Auxiliary result supporting another proof.
+- Corollary: Direct consequence of an established result.
+- Property: Characteristic of a mathematical object.
+- Claim: Local assertion, typically within a proof.
+- Proof: Rigorous justification of a mathematical statement.
+- Conjecture: Statement believed true but not yet proven.
+- Convention: Adopted rule resolving ambiguity or fixing a choice.
+- Notation: Assignment of symbols to mathematical concepts.
+- Remark: Supplementary observation, optionally named.
+- Example: Concrete illustration of a concept or result.
 -->
 
-<!-- 
-
-spaces in code for `:`, `\to`, `\mapsto`, `\iff`, `=`, `+`, `-`, ",", etc; use `\quad` and `\` for rendering spaces
-
--->
 
 ---
 
@@ -644,7 +600,7 @@ $$
 a_n : \text{n-th term}, \quad a_1 : \text{first term}, \quad d : \text{common difference}, \quad r : \text{common ratio}, \quad n : \text{number of terms}
 $$
 
-**Definition (Sequence).**.
+**Definition (Sequence).**
 
 $$
 (a_n)_{n \in \mathbb{N}} = a_1, a_2, a_3, \ldots
@@ -1153,7 +1109,7 @@ $$
 f : \mathbb{R} \to \mathbb{R}, \quad f(x) \coloneqq A\cos(B(x - C)) + D, \quad A,B,C,D \in \mathbb{R},\ B \neq 0
 $$
 
-**Remark**. $A\sin(B(x - C)) + D = A\cos\left(B\left(x - C - \frac{\pi}{2B}\right)\right) + D$.
+**Remark.** $A\sin(B(x - C)) + D = A\cos\left(B\left(x - C - \frac{\pi}{2B}\right)\right) + D$.
 
 **Proposition (Range).**
 
@@ -1780,7 +1736,7 @@ $$
 **Definition (Natural logarithm).**
 
 $$
-\ln x = \int_{1}^{x} \frac{1}{t} \, dt, \quad x > 0
+\ln x = \int_{1}^{x} \frac{1}{t} \  dt, \quad x > 0
 $$
 
 **Notation.**
@@ -1898,7 +1854,7 @@ $$
 **Proposition (Integral).**
 
 $$
-\int \log_a x \, dx = x(\log_a x - \log_a e) + C
+\int \log_a x \ dx = x(\log_a x - \log_a e) + C
 $$
 
 ## Polynomial Equations
@@ -2262,27 +2218,27 @@ $$
 **Proposition (Properties).**
 
 $$
-\int k f(x) \, dx = k \int f(x) \, dx, \quad k \in \mathbb{R}
+\int k f(x) \  dx = k \int f(x) \  dx, \quad k \in \mathbb{R}
 $$
 
 $$
-\int [f(x) \pm g(x)] \, dx = \int f(x) \, dx \pm \int g(x) \, dx
+\int [f(x) \pm g(x)] \  dx = \int f(x) \  dx \pm \int g(x) \  dx
 $$
 
 $$
-\int [af(x) + bg(x)] \, dx = a \int f(x) \, dx + b \int g(x) \, dx \quad \text{(linearity)}
+\int [af(x) + bg(x)] \  dx = a \int f(x) \  dx + b \int g(x) \  dx \quad \text{(linearity)}
 $$
 
 $$
-\int f(x) g'(x) \, dx = f(x)g(x) - \int f'(x) g(x) \, dx \quad \text{(integration by parts)}
+\int f(x) g'(x) \  dx = f(x)g(x) - \int f'(x) g(x) \  dx \quad \text{(integration by parts)}
 $$
 
 $$
-\int f(g(x)) g'(x) \, dx = F(g(x)) + C \quad \text{(substitution)}
+\int f(g(x)) g'(x) \  dx = F(g(x)) + C \quad \text{(substitution)}
 $$
 
 $$
-\int f(ax + b) \, dx = \frac{1}{a} F(ax + b) + C, \quad a \neq 0
+\int f(ax + b) \  dx = \frac{1}{a} F(ax + b) + C, \quad a \neq 0
 $$
 
 **Theorem (Fundamental Theorem of Calculus, Part I)**.
@@ -2300,27 +2256,27 @@ $$
 **Proposition (Properties).**
 
 $$
-\int_{a}^{a} f(x) \, dx = 0
+\int_{a}^{a} f(x) \ dx = 0
 $$
 
 $$
-\int_{a}^{b} f(x) \, dx = -\int_{b}^{a} f(x) \, dx
+\int_{a}^{b} f(x) \  dx = -\int_{b}^{a} f(x) \  dx
 $$
 
 $$
-\int_{a}^{b} f(x) \, dx + \int_{b}^{c} f(x) \, dx = \int_{a}^{c} f(x) \, dx \quad \text{(additivity)}
+\int_{a}^{b} f(x) \  dx + \int_{b}^{c} f(x) \  dx = \int_{a}^{c} f(x) \  dx \quad \text{(additivity)}
 $$
 
 $$
-\int_{a}^{b} [cf(x) + dg(x)] \, dx = c\int_{a}^{b} f(x) \, dx + d\int_{a}^{b} g(x) \, dx \quad \text{(linearity)}
+\int_{a}^{b} [cf(x) + dg(x)] \  dx = c\int_{a}^{b} f(x) \  dx + d\int_{a}^{b} g(x) \  dx \quad \text{(linearity)}
 $$
 
 $$
-\int_{a}^{b} f(x) \, dx \leq \int_{a}^{b} g(x) \, dx \quad \text{if } f(x) \leq g(x) \text{ on } [a, b] \quad \text{(monotonicity)}
+\int_{a}^{b} f(x) \  dx \leq \int_{a}^{b} g(x) \  dx \quad \text{if } f(x) \leq g(x) \text{ on } [a, b] \quad \text{(monotonicity)}
 $$
 
 $$
-\left|\int_{a}^{b} f(x) \, dx\right| \leq \int_{a}^{b} |f(x)| \, dx \quad \text{(triangle inequality)}
+\left|\int_{a}^{b} f(x) \  dx\right| \leq \int_{a}^{b} |f(x)| \  dx \quad \text{(triangle inequality)}
 $$
 
 ## Matrice
