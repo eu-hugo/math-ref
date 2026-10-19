@@ -15,16 +15,21 @@ Proof: Rigorous logical deduction establishing the truth of a Theorem, Propositi
 Conjecture: Educated guess believed true but currently lacking rigorous proof.
 Convention: Agreed-upon rule chosen to resolve ambiguity among valid options.
 Notation: Explicit assignment of symbols or shorthand to represent mathematical concepts.
-Remark: Extra context, historical note, useful perspective or subtle observation for the reader.
+Remark: Supplementary context, historical note, useful perspective, or subtle observation. Optionally named for an established concept.
 Example: Concrete, specific instance illustrating a definition, theorem, or concept.
 
-Modelo axiomático: 
+Hierarquia axiomática: 
 
-Conceitos primitivos (indefinidos, para evitar regressão infinita) > Axiomas/Postulados (verdades assumidas sobre os primitivos) > Definições (de conceitos derivados, construídos a partir dos primitivos) > Teoremas, Proposições, Lemas, etc.
+Conceitos primitivos (indefinidos, para evitar regressão infinita) 
+> Axiomas/Postulados (verdades assumidas sobre os primitivos) 
+> Definições (de conceitos derivados, construídos a partir dos primitivos) 
+> Teoremas, Proposições, Lemas, etc.
 
 -->
 
 <!--
+
+Code:
 
 \cdot  \times  \div  \pm  \mp
 \ast   \star   \circ  \bullet
@@ -71,7 +76,7 @@ Conceitos primitivos (indefinidos, para evitar regressão infinita) > Axiomas/Po
 
 <!-- 
 
-spaces in code for `:`, `\to`, `\mapsto`, `\iff`, `=`, `+`, `-`, ",", etc; use `\quad` and `\` for rendering spaces 
+spaces in code for `:`, `\to`, `\mapsto`, `\iff`, `=`, `+`, `-`, ",", etc; use `\quad` and `\` for rendering spaces
 
 -->
 
@@ -1100,7 +1105,7 @@ $$
 0 \lt b \lt 1 \implies f \text{ strictly decreasing}
 $$
 
-**Remark**. Exponential growth and exponential decay.
+**Remark.** Exponential growth and exponential decay.
 
 **Corollary (Natural exponential).**
 
@@ -2188,7 +2193,7 @@ $$
 x_1, x_2, x_3 \text{ roots} \implies x_1 + x_2 + x_3 = -\frac{b}{a}, \quad x_1 x_2 + x_1 x_3 + x_2 x_3 = \frac{c}{a}, \quad x_1 x_2 x_3 = -\frac{d}{a}
 $$
 
-**Remark.** Abel and Ruffini proved no general algebraic solution exists for degree $\geq 5$.
+**Remark.** Abel and Ruffini proved no general solution by radicals exists for degree $\geq 5$.
 
 # Differential Calculus 
 
@@ -2326,14 +2331,21 @@ $$
 
 ## Mathematical Finance
 
-**Theorem (Rule of 72).**
+**Proposition (Doubling time).**
 
 $$
-\text{time}_\text{doubling} \approx \frac{72}{\text{rate as a percentage}}
+(1+r)^{t_d} = 2 \implies t_d = \frac{\ln 2}{\ln(1+r)}, \quad r > 0
 $$
 
-**Remark.** $t_d = \frac{100 \ln 2}{R} \approx \frac{69.3}{R}$ $69.3$ is adjusted to the highly composite $72$ to yield integer quotients for common rates (e.g., 2, 3, 4, 6, 8, 12).
+**Remark (Rule of 72).** For $R = 100r$ (rate as a percentage), $t_d \approx \frac{100\ln 2}{R} \approx \frac{69.3}{R} \approx \frac{72}{R}$.
 
+**Definition (Real Rate of Return).**
+
+$$
+r_{\text{real}} \coloneqq \frac{1 + r_{\text{nominal}}}{1 + \pi} - 1, \quad \pi \text{ inflation rate}
+$$
+
+**Remark (Fisher approximation).** For small nominal returns and inflation rates, $r_{\text{real}} \approx r_{\text{nominal}} - \pi$.
 
 # Appendix
 
