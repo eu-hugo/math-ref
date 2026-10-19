@@ -256,7 +256,7 @@ Taxonomy
 #### Fundamental Theorem of Calculus
 #### Techniques of Integration
 #### Improper Integrals
-### Sequences and Series
+<!--### Sequences and Series-->
 #### Convergence Tests
 #### Taylor Series
 #### Maclaurin Series
