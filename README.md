@@ -1,4 +1,4 @@
-**Convention.** Each formula is a canonical representative of its equivalence class.
+**Convention.** Equivalent formulations are represented by a preferred canonical form.
 
 <!--
 Editorial conventions
