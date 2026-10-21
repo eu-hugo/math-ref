@@ -38,546 +38,10 @@ Taxonomy
 ---
 
 # Part I Foundations
-
-## Set Theory
-### Basic Concepts
-#### Unions
-#### Intersections
-#### Complements
-#### Power Sets
-#### Cartesian Products
-### Relations and Functions
-#### Equivalence Relations
-#### Order Relations
-#### Injections
-#### Surjections
-#### Bijections
-### Cardinality
-#### Countable Sets
-#### Uncountable Sets
-#### Cantor's Diagonal Argument
-#### Continuum Hypothesis
-### Axiomatic Set Theory
-#### ZFC Axioms
-#### Axiom of Choice
-#### Equivalents of the Axiom of Choice
-#### Zorn's Lemma
-
-## Logic
-### Propositional Logic
-#### Truth Tables
-#### Logical Connectives
-#### Tautologies
-#### Contradictions
-### Predicate Logic
-#### Quantifiers
-#### First-Order Theories
-### Proof Systems
-#### Natural Deduction
-#### Ordinary Induction
-#### Strong Induction
-#### Transfinite Induction
-#### Proof by Contradiction
-#### Proof by Contrapositive
-### Model Theory
-#### Completeness Theorem
-#### Compactness Theorem
-#### Löwenheim-Skolem Theorems
-### Computability Theory
-#### Turing Machines
-#### The Halting Problem
-#### Recursive Functions
-### Gödel's Incompleteness Theorems
-#### First Incompleteness Theorem
-#### Second Incompleteness Theorem
-
 # Part II Algebra
-
-## Elementary Algebra
-### Numbers and Operations
-#### Natural Numbers
-#### Integer Numbers
-#### Rational Numbers
-#### Real Numbers
-#### Complex Numbers
-#### Properties of Exponents
-#### Properties of Radicals
-### Complex Numbers
-#### Euler's Identity
-#### De Moivre's Theorem
-#### Roots of Unity
-### Polynomials
-#### Factorization
-#### Roots of Polynomials
-#### Fundamental Theorem of Algebra
-#### Vieta's Formulas
-### Inequalities
-#### AM-GM Inequality
-#### Harmonic Mean (HM) Inequality
-#### Cauchy-Schwarz Inequality
-#### Hölder Inequality
-#### Minkowski Inequality
-
-## Linear Algebra
-### Vector Spaces
-#### Basis
-#### Dimension
-#### Subspaces
-#### Quotient Spaces
-### Matrices and Determinants
-#### Rank
-#### Nullity
-#### Trace
-#### Inverse Matrix
-#### Adjugate Matrix
-### Linear Transformations
-#### Kernel
-#### Image
-#### Change of Basis
-### Eigenvalues and Eigenvectors
-#### Characteristic Polynomial
-#### Diagonalization
-#### Jordan Canonical Form
-#### Spectral Theorem
-### Inner Product Spaces
-#### Orthogonality
-#### Gram-Schmidt Process
-### Matrix Factorizations
-#### LU Factorization
-#### QR Factorization
-#### Cholesky Factorization
-#### Singular Value Decomposition (SVD)
-
-## Abstract Algebra
-### Groups
-#### Symmetry Groups
-#### Permutation Groups
-#### Subgroups
-#### Cosets
-#### Lagrange's Theorem
-#### Homomorphisms
-#### Isomorphism Theorems
-#### Sylow Theorems
-### Rings and Ideals
-#### Integral Domains
-#### Fields of Fractions
-#### Principal Ideal Domains (PIDs)
-#### Unique Factorization Domains (UFDs)
-### Fields and Galois Theory
-#### Field Extensions
-#### Finite Fields
-#### Solvability by Radicals
-### Modules
-#### Free Modules
-#### Projective Modules
-#### Structure Theorem for Finitely Generated Modules over PIDs
-### Representation Theory
-#### Characters
-#### Maschke's Theorem
-### Lie Groups and Lie Algebras
-#### Lie Groups
-#### Lie Algebras
-
-## Category Theory
-### Categories
-### Functors
-### Natural Transformations
-### Limits and Colimits
-#### Products
-#### Coproducts
-#### Equalizers
-#### Coequalizers
-### Adjunctions and Monads
-#### Adjunctions
-#### Monads
-### Yoneda Lemma and Representable Functors
-#### Yoneda Lemma
-#### Representable Functors
-
-## Number Theory
-### Divisibility and Euclidean Algorithm
-#### Divisibility
-#### Euclidean Algorithm
-#### Bézout's Identity
-### Primes and Factorization
-#### Prime Numbers
-#### Prime Factorization
-#### Fundamental Theorem of Arithmetic
-#### Prime Number Theorem
-#### Riemann Hypothesis
-### Modular Arithmetic
-#### Chinese Remainder Theorem
-#### Fermat's Little Theorem
-#### Euler's Totient Function
-#### Quadratic Reciprocity
-### Diophantine Equations
-#### Linear Diophantine Equations
-#### Pell's Equation
-#### Fermat's Last Theorem
-### Algebraic and Analytic Number Theory
-#### Number Fields
-#### Class Groups
-#### Dirichlet Series
-### Cryptography
-#### RSA Algorithm
-#### Diffie-Hellman Key Exchange
-#### Elliptic Curve Cryptography
-
 # Part III Analysis
-
 ## Calculus
-### Limits and Continuity
-#### Epsilon-Delta Definition
-#### Intermediate Value Theorem
-### Differential Calculus
-#### Rules of Differentiation
-#### Mean Value Theorem
-#### Taylor's Theorem
-#### L'Hôpital's Rule
-### Integral Calculus
-#### Riemann Integral
-#### Fundamental Theorem of Calculus
-#### Techniques of Integration
-#### Improper Integrals
 ### Sequences and Series
-#### Convergence Tests
-#### Taylor Series
-#### Maclaurin Series
-
-## Trigonometry
-### Trigonometric Functions
-### Inverse Trigonometric Functions
-### Trigonometric Identities and Equations
-#### Pythagorean Identities
-#### Sum and Difference Identities
-#### Double-Angle Identities
-#### Half-Angle Identities
-### Spherical Trigonometry
-
-## Multivariable and Vector Calculus
-### Partial Derivatives
-### Chain Rule
-### Implicit Function Theorem
-### Gradients
-### Directional Derivatives
-### Lagrange Multipliers
-### Multiple Integrals
-### Change of Variables
-### Vector Calculus
-#### Divergence
-#### Gradient
-#### Curl
-#### Helmholtz Decomposition
-#### Stokes' Theorem
-#### Green's Theorem
-#### Divergence Theorem
-
-## Real Analysis
-### Metric Spaces and Completeness
-#### Metric Spaces
-#### Completeness
-### Topology of ℝⁿ
-#### Heine-Borel Theorem
-#### Compactness
-#### Connectedness
-### Measure Theory and Lebesgue Integration
-#### Measure Theory
-#### Lebesgue Integration
-#### Lp Spaces
-#### Convergence Theorems
-### Baire Category Theorem
-
-## Complex Analysis
-### Analytic Functions
-### Cauchy-Riemann Equations
-### Cauchy's Integral Theorem
-### Cauchy's Integral Formula
-### Series Representations
-#### Taylor Series (Complex)
-#### Laurent Series
-### Residues and Poles
-#### Residues
-#### Poles
-#### Residue Theorem
-### Conformal Mapping
-### Analytic Continuation
-
-## Special Functions and Integral Transforms
-### Special Functions
-#### Gamma Function
-#### Beta Function
-#### Zeta Function
-### Orthogonal Polynomials
-### Bessel Functions
-### Integral Transforms
-#### Fourier Transform
-#### Laplace Transform
-#### Wavelet Transform
-
-## Functional Analysis
-### Banach Spaces
-### Hilbert Spaces
-### Operator Theory
-### Spectral Theorem
-### Distributions
-### Sobolev Spaces
-
-## Differential Equations
-### Ordinary Differential Equations (ODEs)
-#### Existence and Uniqueness
-#### Linear Systems
-#### Sturm-Liouville Theory
-### Partial Differential Equations (PDEs)
-#### Heat Equation
-#### Wave Equation
-#### Laplace Equation
-#### Separation of Variables
-#### Fourier Methods
-### Dynamical Systems
-#### Stability
-#### Bifurcations
-#### Chaos
-#### Fractals
-
-## Asymptotic Analysis
-### Big-O Notation
-### Asymptotic Expansions
-### Laplace's Method
-### Stationary Phase
-### WKB Approximation
-
-# Part IV Geometry
-
-## Classical Geometry
-### Euclidean Geometry
-#### Axioms
-#### Postulates
-#### Triangles
-#### Circles
-#### Polygons
-### Non-Euclidean Geometry
-#### Hyperbolic Geometry
-#### Elliptic Geometry
-#### Spherical Geometry
-
-## Analytic and Projective Geometry
-### Coordinate Systems
-### Transformations
-### Conic Sections
-### Quadric Surfaces
-### Projective Geometry
-
-## Differential Geometry
-### Curves and Surfaces
-#### Curvature
-#### Torsion
-#### Frenet-Serret Formulas
-### Manifolds, Tensors, and Riemannian Geometry
-#### Manifolds
-#### Tensors
-#### Riemannian Geometry
-#### Metric
-#### Geodesics
-#### Gauss-Bonnet Theorem
-### Symplectic Geometry
-
-## Algebraic Geometry
-### Varieties, Schemes, and Sheaves
-#### Varieties
-#### Schemes
-#### Sheaves
-#### Hilbert's Nullstellensatz
-#### Serre Duality
-### Elliptic Curves
-
-## Topology
-### Point-Set Topology
-#### Compactness
-#### Connectedness
-#### Separation Axioms
-### Algebraic Topology
-#### Fundamental Group
-#### Homology
-#### Cohomology
-### Knot Theory
-### Differential Topology
-
-# Part V Discrete Mathematics
-
-## Combinatorics
-### Counting Principles
-### Inclusion-Exclusion Principle
-### Generating Functions
-### Recurrence Relations
-### Extremal Combinatorics
-### Ramsey Theory
-
-## Graph Theory
-### Paths and Cycles
-### Connectivity
-### Trees
-### Planarity
-### Graph Coloring
-### Matchings
-### Network Flows
-
-## Discrete Structures
-### Posets and Lattices
-#### Posets
-#### Lattices
-#### Möbius Inversion
-### Boolean Algebras
-### Design Theory and Latin Squares
-#### Design Theory
-#### Latin Squares
-
-## Algorithms and Complexity
-### Algorithm Analysis
-### Asymptotic Complexity
-### Computability Theory
-### Complexity Theory
-#### P vs NP
-#### NP-Completeness
-#### Major Complexity Classes
-
-# Part VI Applied Mathematics
-
-## Probability and Statistics
-### Probability Theory
-#### Axioms of Probability
-#### Conditional Probability
-#### Bayes' Theorem
-#### Random Variables
-#### Law of Large Numbers
-#### Central Limit Theorem
-### Statistics
-#### Estimation
-#### Hypothesis Testing
-#### Regression
-#### Bayesian Inference
-### Stochastic Processes
-#### Markov Chains
-#### Poisson Processes
-#### Martingales
-#### Brownian Motion
-#### Stochastic Calculus
-#### Itô's Lemma
-
-## Information and Coding Theory
-### Information Theory
-#### Shannon Entropy
-#### Mutual Information
-#### Channel Capacity
-### Error-Correcting Codes
-### Source Coding
-
-## Numerical Analysis
-### Root Finding
-### Numerical Linear Algebra
-### Interpolation
-### Approximation
-### Least Squares
-### Numerical Integration
-### Numerical Differentiation
-### Numerical Solutions of ODEs
-### Numerical Solutions of PDEs
-### Finite Element Method
-### Finite Difference Method
-### Monte Carlo Methods
-### Markov Chain Monte Carlo Methods
-
-## Optimization and Operations Research
-### Linear Optimization
-### Nonlinear Optimization
-### Convex Optimization
-### Integer Optimization
-### Combinatorial Optimization
-### Dynamic Programming
-### Game Theory
-#### Nash Equilibrium
-### Calculus of Variations
-### Optimal Control
-
-## Mathematical Computing
-### Automata Theory and Formal Languages
-#### Deterministic and Non-Deterministic Finite Automata (DFA/NFA)
-#### Kleene's Theorem and Regular Expressions
-#### Context-Free Grammars
-#### Chomsky Hierarchy
-### Statistical Learning Theory (Machine Learning)
-#### Empirical Risk Minimization
-#### Vapnik-Chervonenkis (VC) Dimension
-#### Support Vector Machines and Mercer's Theorem
-#### Gradient Descent and Backpropagation
-### Applied Network Theory
-#### PageRank Algorithm
-#### Centrality Measures
-### Geometric Computing and Computer Graphics
-#### Bézier Curves and B-Splines
-#### Quaternions and 3D Rotations
-
-## Mathematical Finance
-### Deterministic Cash Flows and Time Value of Money
-#### Continuous Compounding
-#### Present Value
-#### Perpetuity Limits
-#### Taylor Series Approximations
-#### Heuristics
-#### Rule of 72
-### Portfolio Theory and Mean-Variance Optimization
-#### Covariance Matrices
-#### Markowitz Efficient Frontier
-#### Capital Asset Pricing Model (CAPM)
-#### Lagrange Multipliers
-#### Constrained Minimization
-### Stochastic Calculus in Finance
-#### Geometric Brownian Motion
-#### Wiener Processes
-#### Itô's Lemma
-#### Martingales
-#### Girsanov Theorem
-### Quantitative Finance and Derivative Pricing PDEs
-#### Black-Scholes-Merton PDE
-#### Option Pricing
-#### Binomial Trees
-#### Feynman-Kac Formula
-#### Risk-Neutral Valuation
-### Actuarial Mathematics and Risk Models
-#### Probability Quantiles
-#### Value at Risk (VaR)
-#### Expected Shortfall
-#### Life Contingencies
-#### Survival Models
-#### Poisson Jump Processes
-
-## Mathematical Physics
-### Classical Mechanics
-#### Lagrangian Formulation
-#### Action Functional
-#### Hamiltonian Systems
-#### Poisson Brackets
-### Electromagnetism
-#### Maxwell's Equations (Differential)
-#### Maxwell's Equations (Covariant)
-### Quantum Mechanics
-#### Hilbert Spaces
-#### Schrödinger Equation
-#### Dirac Equation
-### Statistical Mechanics
-#### Partition Functions
-#### Entropy
-### General Relativity
-#### Metric Tensors
-#### Christoffel Symbols
-#### Einstein Field Equations
-### Fluid Dynamics
-#### Cauchy Momentum Equation
-#### Navier-Stokes PDEs
-#### Reynolds Number Limits
-
----
-
-## Sequences and Series
 
 **Notation.**
 
@@ -2295,3 +1759,546 @@ $$
 - Gradshteyn, I. S., & Ryzhik, I. M. (2014). *Table of Integrals, Series, and Products* (8th ed.). Academic Press.
 - Zwillinger, D. (Ed.). (2018). *CRC Standard Mathematical Tables and Formulas* (33rd ed.). CRC Press.
 - Gowers, T. (Ed.). (2008). The Princeton Companion to Mathematics. Princeton University Press.
+
+
+---
+
+Todo
+
+# Part I Foundations
+
+## Set Theory
+### Basic Concepts
+#### Unions
+#### Intersections
+#### Complements
+#### Power Sets
+#### Cartesian Products
+### Relations and Functions
+#### Equivalence Relations
+#### Order Relations
+#### Injections
+#### Surjections
+#### Bijections
+### Cardinality
+#### Countable Sets
+#### Uncountable Sets
+#### Cantor's Diagonal Argument
+#### Continuum Hypothesis
+### Axiomatic Set Theory
+#### ZFC Axioms
+#### Axiom of Choice
+#### Equivalents of the Axiom of Choice
+#### Zorn's Lemma
+
+## Logic
+### Propositional Logic
+#### Truth Tables
+#### Logical Connectives
+#### Tautologies
+#### Contradictions
+### Predicate Logic
+#### Quantifiers
+#### First-Order Theories
+### Proof Systems
+#### Natural Deduction
+#### Ordinary Induction
+#### Strong Induction
+#### Transfinite Induction
+#### Proof by Contradiction
+#### Proof by Contrapositive
+### Model Theory
+#### Completeness Theorem
+#### Compactness Theorem
+#### Löwenheim-Skolem Theorems
+### Computability Theory
+#### Turing Machines
+#### The Halting Problem
+#### Recursive Functions
+### Gödel's Incompleteness Theorems
+#### First Incompleteness Theorem
+#### Second Incompleteness Theorem
+
+# Part II Algebra
+
+## Elementary Algebra
+### Numbers and Operations
+#### Natural Numbers
+#### Integer Numbers
+#### Rational Numbers
+#### Real Numbers
+#### Complex Numbers
+#### Properties of Exponents
+#### Properties of Radicals
+### Complex Numbers
+#### Euler's Identity
+#### De Moivre's Theorem
+#### Roots of Unity
+### Polynomials
+#### Factorization
+#### Roots of Polynomials
+#### Fundamental Theorem of Algebra
+#### Vieta's Formulas
+### Inequalities
+#### AM-GM Inequality
+#### Harmonic Mean (HM) Inequality
+#### Cauchy-Schwarz Inequality
+#### Hölder Inequality
+#### Minkowski Inequality
+
+## Linear Algebra
+### Vector Spaces
+#### Basis
+#### Dimension
+#### Subspaces
+#### Quotient Spaces
+### Matrices and Determinants
+#### Rank
+#### Nullity
+#### Trace
+#### Inverse Matrix
+#### Adjugate Matrix
+### Linear Transformations
+#### Kernel
+#### Image
+#### Change of Basis
+### Eigenvalues and Eigenvectors
+#### Characteristic Polynomial
+#### Diagonalization
+#### Jordan Canonical Form
+#### Spectral Theorem
+### Inner Product Spaces
+#### Orthogonality
+#### Gram-Schmidt Process
+### Matrix Factorizations
+#### LU Factorization
+#### QR Factorization
+#### Cholesky Factorization
+#### Singular Value Decomposition (SVD)
+
+## Abstract Algebra
+### Groups
+#### Symmetry Groups
+#### Permutation Groups
+#### Subgroups
+#### Cosets
+#### Lagrange's Theorem
+#### Homomorphisms
+#### Isomorphism Theorems
+#### Sylow Theorems
+### Rings and Ideals
+#### Integral Domains
+#### Fields of Fractions
+#### Principal Ideal Domains (PIDs)
+#### Unique Factorization Domains (UFDs)
+### Fields and Galois Theory
+#### Field Extensions
+#### Finite Fields
+#### Solvability by Radicals
+### Modules
+#### Free Modules
+#### Projective Modules
+#### Structure Theorem for Finitely Generated Modules over PIDs
+### Representation Theory
+#### Characters
+#### Maschke's Theorem
+### Lie Groups and Lie Algebras
+#### Lie Groups
+#### Lie Algebras
+
+## Category Theory
+### Categories
+### Functors
+### Natural Transformations
+### Limits and Colimits
+#### Products
+#### Coproducts
+#### Equalizers
+#### Coequalizers
+### Adjunctions and Monads
+#### Adjunctions
+#### Monads
+### Yoneda Lemma and Representable Functors
+#### Yoneda Lemma
+#### Representable Functors
+
+## Number Theory
+### Divisibility and Euclidean Algorithm
+#### Divisibility
+#### Euclidean Algorithm
+#### Bézout's Identity
+### Primes and Factorization
+#### Prime Numbers
+#### Prime Factorization
+#### Fundamental Theorem of Arithmetic
+#### Prime Number Theorem
+#### Riemann Hypothesis
+### Modular Arithmetic
+#### Chinese Remainder Theorem
+#### Fermat's Little Theorem
+#### Euler's Totient Function
+#### Quadratic Reciprocity
+### Diophantine Equations
+#### Linear Diophantine Equations
+#### Pell's Equation
+#### Fermat's Last Theorem
+### Algebraic and Analytic Number Theory
+#### Number Fields
+#### Class Groups
+#### Dirichlet Series
+### Cryptography
+#### RSA Algorithm
+#### Diffie-Hellman Key Exchange
+#### Elliptic Curve Cryptography
+
+# Part III Analysis
+
+## Calculus
+### Limits and Continuity
+#### Epsilon-Delta Definition
+#### Intermediate Value Theorem
+### Differential Calculus
+#### Rules of Differentiation
+#### Mean Value Theorem
+#### Taylor's Theorem
+#### L'Hôpital's Rule
+### Integral Calculus
+#### Riemann Integral
+#### Fundamental Theorem of Calculus
+#### Techniques of Integration
+#### Improper Integrals
+### Sequences and Series
+#### Convergence Tests
+#### Taylor Series
+#### Maclaurin Series
+
+## Trigonometry
+### Trigonometric Functions
+### Inverse Trigonometric Functions
+### Trigonometric Identities and Equations
+#### Pythagorean Identities
+#### Sum and Difference Identities
+#### Double-Angle Identities
+#### Half-Angle Identities
+### Spherical Trigonometry
+
+## Multivariable and Vector Calculus
+### Partial Derivatives
+### Chain Rule
+### Implicit Function Theorem
+### Gradients
+### Directional Derivatives
+### Lagrange Multipliers
+### Multiple Integrals
+### Change of Variables
+### Vector Calculus
+#### Divergence
+#### Gradient
+#### Curl
+#### Helmholtz Decomposition
+#### Stokes' Theorem
+#### Green's Theorem
+#### Divergence Theorem
+
+## Real Analysis
+### Metric Spaces and Completeness
+#### Metric Spaces
+#### Completeness
+### Topology of ℝⁿ
+#### Heine-Borel Theorem
+#### Compactness
+#### Connectedness
+### Measure Theory and Lebesgue Integration
+#### Measure Theory
+#### Lebesgue Integration
+#### Lp Spaces
+#### Convergence Theorems
+### Baire Category Theorem
+
+## Complex Analysis
+### Analytic Functions
+### Cauchy-Riemann Equations
+### Cauchy's Integral Theorem
+### Cauchy's Integral Formula
+### Series Representations
+#### Taylor Series (Complex)
+#### Laurent Series
+### Residues and Poles
+#### Residues
+#### Poles
+#### Residue Theorem
+### Conformal Mapping
+### Analytic Continuation
+
+## Special Functions and Integral Transforms
+### Special Functions
+#### Gamma Function
+#### Beta Function
+#### Zeta Function
+### Orthogonal Polynomials
+### Bessel Functions
+### Integral Transforms
+#### Fourier Transform
+#### Laplace Transform
+#### Wavelet Transform
+
+## Functional Analysis
+### Banach Spaces
+### Hilbert Spaces
+### Operator Theory
+### Spectral Theorem
+### Distributions
+### Sobolev Spaces
+
+## Differential Equations
+### Ordinary Differential Equations (ODEs)
+#### Existence and Uniqueness
+#### Linear Systems
+#### Sturm-Liouville Theory
+### Partial Differential Equations (PDEs)
+#### Heat Equation
+#### Wave Equation
+#### Laplace Equation
+#### Separation of Variables
+#### Fourier Methods
+### Dynamical Systems
+#### Stability
+#### Bifurcations
+#### Chaos
+#### Fractals
+
+## Asymptotic Analysis
+### Big-O Notation
+### Asymptotic Expansions
+### Laplace's Method
+### Stationary Phase
+### WKB Approximation
+
+# Part IV Geometry
+
+## Classical Geometry
+### Euclidean Geometry
+#### Axioms
+#### Postulates
+#### Triangles
+#### Circles
+#### Polygons
+### Non-Euclidean Geometry
+#### Hyperbolic Geometry
+#### Elliptic Geometry
+#### Spherical Geometry
+
+## Analytic and Projective Geometry
+### Coordinate Systems
+### Transformations
+### Conic Sections
+### Quadric Surfaces
+### Projective Geometry
+
+## Differential Geometry
+### Curves and Surfaces
+#### Curvature
+#### Torsion
+#### Frenet-Serret Formulas
+### Manifolds, Tensors, and Riemannian Geometry
+#### Manifolds
+#### Tensors
+#### Riemannian Geometry
+#### Metric
+#### Geodesics
+#### Gauss-Bonnet Theorem
+### Symplectic Geometry
+
+## Algebraic Geometry
+### Varieties, Schemes, and Sheaves
+#### Varieties
+#### Schemes
+#### Sheaves
+#### Hilbert's Nullstellensatz
+#### Serre Duality
+### Elliptic Curves
+
+## Topology
+### Point-Set Topology
+#### Compactness
+#### Connectedness
+#### Separation Axioms
+### Algebraic Topology
+#### Fundamental Group
+#### Homology
+#### Cohomology
+### Knot Theory
+### Differential Topology
+
+# Part V Discrete Mathematics
+
+## Combinatorics
+### Counting Principles
+### Inclusion-Exclusion Principle
+### Generating Functions
+### Recurrence Relations
+### Extremal Combinatorics
+### Ramsey Theory
+
+## Graph Theory
+### Paths and Cycles
+### Connectivity
+### Trees
+### Planarity
+### Graph Coloring
+### Matchings
+### Network Flows
+
+## Discrete Structures
+### Posets and Lattices
+#### Posets
+#### Lattices
+#### Möbius Inversion
+### Boolean Algebras
+### Design Theory and Latin Squares
+#### Design Theory
+#### Latin Squares
+
+## Algorithms and Complexity
+### Algorithm Analysis
+### Asymptotic Complexity
+### Computability Theory
+### Complexity Theory
+#### P vs NP
+#### NP-Completeness
+#### Major Complexity Classes
+
+# Part VI Applied Mathematics
+
+## Probability and Statistics
+### Probability Theory
+#### Axioms of Probability
+#### Conditional Probability
+#### Bayes' Theorem
+#### Random Variables
+#### Law of Large Numbers
+#### Central Limit Theorem
+### Statistics
+#### Estimation
+#### Hypothesis Testing
+#### Regression
+#### Bayesian Inference
+### Stochastic Processes
+#### Markov Chains
+#### Poisson Processes
+#### Martingales
+#### Brownian Motion
+#### Stochastic Calculus
+#### Itô's Lemma
+
+## Information and Coding Theory
+### Information Theory
+#### Shannon Entropy
+#### Mutual Information
+#### Channel Capacity
+### Error-Correcting Codes
+### Source Coding
+
+## Numerical Analysis
+### Root Finding
+### Numerical Linear Algebra
+### Interpolation
+### Approximation
+### Least Squares
+### Numerical Integration
+### Numerical Differentiation
+### Numerical Solutions of ODEs
+### Numerical Solutions of PDEs
+### Finite Element Method
+### Finite Difference Method
+### Monte Carlo Methods
+### Markov Chain Monte Carlo Methods
+
+## Optimization and Operations Research
+### Linear Optimization
+### Nonlinear Optimization
+### Convex Optimization
+### Integer Optimization
+### Combinatorial Optimization
+### Dynamic Programming
+### Game Theory
+#### Nash Equilibrium
+### Calculus of Variations
+### Optimal Control
+
+## Mathematical Computing
+### Automata Theory and Formal Languages
+#### Deterministic and Non-Deterministic Finite Automata (DFA/NFA)
+#### Kleene's Theorem and Regular Expressions
+#### Context-Free Grammars
+#### Chomsky Hierarchy
+### Statistical Learning Theory (Machine Learning)
+#### Empirical Risk Minimization
+#### Vapnik-Chervonenkis (VC) Dimension
+#### Support Vector Machines and Mercer's Theorem
+#### Gradient Descent and Backpropagation
+### Applied Network Theory
+#### PageRank Algorithm
+#### Centrality Measures
+### Geometric Computing and Computer Graphics
+#### Bézier Curves and B-Splines
+#### Quaternions and 3D Rotations
+
+## Mathematical Finance
+### Deterministic Cash Flows and Time Value of Money
+#### Continuous Compounding
+#### Present Value
+#### Perpetuity Limits
+#### Taylor Series Approximations
+#### Heuristics
+#### Rule of 72
+### Portfolio Theory and Mean-Variance Optimization
+#### Covariance Matrices
+#### Markowitz Efficient Frontier
+#### Capital Asset Pricing Model (CAPM)
+#### Lagrange Multipliers
+#### Constrained Minimization
+### Stochastic Calculus in Finance
+#### Geometric Brownian Motion
+#### Wiener Processes
+#### Itô's Lemma
+#### Martingales
+#### Girsanov Theorem
+### Quantitative Finance and Derivative Pricing PDEs
+#### Black-Scholes-Merton PDE
+#### Option Pricing
+#### Binomial Trees
+#### Feynman-Kac Formula
+#### Risk-Neutral Valuation
+### Actuarial Mathematics and Risk Models
+#### Probability Quantiles
+#### Value at Risk (VaR)
+#### Expected Shortfall
+#### Life Contingencies
+#### Survival Models
+#### Poisson Jump Processes
+
+## Mathematical Physics
+### Classical Mechanics
+#### Lagrangian Formulation
+#### Action Functional
+#### Hamiltonian Systems
+#### Poisson Brackets
+### Electromagnetism
+#### Maxwell's Equations (Differential)
+#### Maxwell's Equations (Covariant)
+### Quantum Mechanics
+#### Hilbert Spaces
+#### Schrödinger Equation
+#### Dirac Equation
+### Statistical Mechanics
+#### Partition Functions
+#### Entropy
+### General Relativity
+#### Metric Tensors
+#### Christoffel Symbols
+#### Einstein Field Equations
+### Fluid Dynamics
+#### Cauchy Momentum Equation
+#### Navier-Stokes PDEs
+#### Reynolds Number Limits
